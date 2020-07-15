@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.fort</groupId>
-	<artifactId>fort_dev</artifactId>
+	<artifactId>spring_cloud_dev</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>fort_dev</name>
+	<name>spring_cloud_dev</name>
 	<url>http://maven.apache.org</url>
 
 	<parent>

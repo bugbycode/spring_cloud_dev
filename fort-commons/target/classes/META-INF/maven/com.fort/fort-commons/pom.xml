@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.fort</groupId>
-    <artifactId>fort_dev</artifactId>
+    <artifactId>spring_cloud_dev</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>fort-commons</artifactId>
