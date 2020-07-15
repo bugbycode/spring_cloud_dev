@@ -27,7 +27,7 @@ Spring cloud Security Oauth2 本地事务、分布式事务练习
 
 3、启动其他微服务
 
-接口响应状态码说明：
+HTTP 响应状态码说明：
 
 200 成功
 
