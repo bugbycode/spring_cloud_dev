@@ -18,3 +18,11 @@ Spring cloud Security Oauth2 本地事务、分布式事务练习
 4、分布式事务使用seata实现
 
 本项目为前后端分离项目的服务端。
+
+项目启动顺序说明：
+
+1、启动注册中心微服务（fort-discovery-service）
+
+2、启动配置中心微服务（fort-config-service）
+
+3、启动其他微服务
