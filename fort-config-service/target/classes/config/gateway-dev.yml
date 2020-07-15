@@ -1,0 +1,6 @@
+spring:
+  oauth:
+    clientId: sansanyuncloud_web #客户端ID
+    clientSecret: sansanyuncloud_web #客户端私钥
+    scope: web #授权范围 web
+    resolePath: /oauth2/oauth/token #自动附加客户端ID和私钥的请求

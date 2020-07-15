@@ -1,0 +1,43 @@
+server:
+  port: 8090
+spring:
+  security:
+    user:
+      name: config
+      password: Cl0vdsec.sansoft
+  mvc:
+    servlet:
+      load-on-startup: 1
+  application:
+    name: config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:/config
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://discovery:Cl0vdsec.eureka@localhost:8761/eureka/
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+  ConnectTimeout: 30000 # 连接超时时间(ms)
+  ReadTimeout: 30000 # 通信超时时间(ms)
+  OkToRetryOnAllOperations: true # 是否对所有操作重试
+  MaxAutoRetriesNextServer: 2 # 同一服务不同实例的重试次数
+  MaxAutoRetries: 2 # 同一实例的重试次数
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 540000 # 熔断超时时长：180000ms
+          strategy: SEMAPHORE

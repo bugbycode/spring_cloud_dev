@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fort.mapper.role.RoleMapper">
+	<resultMap type="role" id="roleResult">
+		<result property="id" 					column="id"/>
+		<result property="name" 				column="name"/>
+		<result property="description" 			column="description"/>
+		<result property="grantedAuthority" 	column="granted_authority"/>
+		<result property="type" 				column="type"/>
+		<result property="createTime" 			column="create_time"/>
+		<result property="updateTime" 			column="update_time"/>
+	</resultMap>
+	
+	<select id="queryById" parameterType="long" resultMap="roleResult">
+		<![CDATA[
+			select * from role where id = #{value}
+		]]>
+	</select>
+</mapper>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fort.mapper.oauth.TokenMapper">
+	<!-- 开启二级缓存（默认参数） -->
+	<cache eviction="LRU" flushInterval="100000" size="1024" readOnly="true"/>
+	<resultMap type="oauthAccessToken" id="accessTokenResult">
+		<result column = "tokenId" 				property = "token_id"/>
+		<result column = "token" 				property = "token"/>
+		<result column = "authentication_id" 	property = "authenticationId"/>
+		<result column = "user_name" 			property = "userName"/>
+		<result column = "client_id" 			property = "clientId"/>
+		<result column = "authentication" 		property = "authentication"/>
+		<result column = "refresh_token" 		property = "refreshToken" />
+	</resultMap>
+	<resultMap type="oauthRefreshToken" id="refreshTokenResult">
+		<result column = "token_id"  			property = "tokenId"/>
+		<result column = "token" 	 			property = "token"/>
+		<result column = "authentication"  		property = "authentication"/>
+	</resultMap>
+
+	<select id="queryByTokenId" parameterType="String" resultMap="accessTokenResult">
+		<![CDATA[
+			SELECT * FROM `oauth_access_token` WHERE `token_id` = #{tokenId} limit 1
+		]]>
+	</select>
+
+	<select id="queryByAuthenticationId" parameterType="String" resultMap="accessTokenResult">
+		<![CDATA[
+			SELECT * FROM `oauth_access_token` WHERE `authentication_id` = #{authenticationId} limit 1
+		]]>
+	</select>
+
+	<select id="queryByClientIdAndUserName" parameterType="java.util.HashMap" resultMap="accessTokenResult">
+		<![CDATA[
+			SELECT * FROM `oauth_access_token` WHERE `client_id` = #{clientId} AND `user_name` = #{userName}
+		]]>
+	</select>
+
+	<select id="queryByClientId" parameterType="String" resultMap="accessTokenResult">
+		<![CDATA[
+			SELECT * FROM `oauth_access_token` WHERE `client_id` = #{clientId} limit 1
+		]]>
+	</select>
+
+	<delete id="deleteByTokenId" parameterType="String">
+		<![CDATA[
+			DELETE FROM `oauth_access_token` WHERE `token_id` = #{tokenId}
+		]]>
+	</delete>
+
+	<delete id="deleteByRefreshToken" parameterType="String">
+		<![CDATA[
+			DELETE FROM `oauth_access_token` WHERE `refresh_token` = #{refreshToken}
+		]]>
+	</delete>
+
+	<insert id="insertAccessToken" parameterType="oauthAccessToken">
+		<![CDATA[
+			INSERT INTO `oauth_access_token` (
+			`token_id`,
+			`token`,
+			`authentication_id`,
+			`user_name`,
+			`client_id`,
+			`authentication`,
+			`refresh_token`)VALUES(
+			#{tokenId},
+			#{token},
+			#{authenticationId},
+			#{userName},
+			#{clientId},
+			#{authentication},
+			#{refreshToken})
+		]]>
+	</insert>
+
+	<update id="updateAccessToken" parameterType="oauthAccessToken">
+		<![CDATA[
+			UPDATE 
+			   `oauth_access_token` 
+			SET
+			  `token` = #{token},
+			  `authentication_id` = #{authenticationId},
+			  `user_name` = #{userName},
+			  `client_id` = #{clientId},
+			  `authentication` = #{authentication},
+			  `refresh_token` = #{refreshToken}
+			WHERE `token_id` = #{tokenId}
+		]]>
+	</update>
+
+	<insert id="insertRefreshToken" parameterType="oauthRefreshToken">
+		<![CDATA[
+			INSERT INTO `oauth_refresh_token` (`token_id`,`token`,`authentication`) VALUES (#{tokenId},#{token},#{authentication})
+		]]>
+	</insert>
+
+	<select id="queryRefreshTokenByTokenId" parameterType="String">
+		<![CDATA[
+			SELECT * FROM `oauth_refresh_token` WHERE `token_id` = #{tokenId} limit 1
+		]]>
+	</select>
+
+	<delete id="deleteRefreshByTokenId" parameterType="String">
+		<![CDATA[
+			DELETE FROM `oauth_refresh_token` WHERE `token_id` = #{tokenId}
+		]]>
+	</delete>
+</mapper>

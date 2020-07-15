@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="true"/>
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<setting name="logImpl" value="LOG4J2"/>
+	</settings>
+	<typeAliases>
+		<typeAlias alias="user" type="com.fort.module.user.User"/>
+		<typeAlias alias="role" type="com.fort.module.role.Role"/>
+		<typeAlias alias="oauthAccessToken" type="com.fort.module.oauth.OauthAccessToken"/>
+		<typeAlias alias="oauthClientDetails" type="com.fort.module.oauth.OauthClientDetails"/>
+		<typeAlias alias="oauthRefreshToken" type="com.fort.module.oauth.OauthRefreshToken"/>
+	</typeAliases>
+</configuration>

@@ -1,0 +1,11 @@
+spring:
+  server:
+    datasource:
+      url: jdbc:mysql://172.19.0.100:3306/fort?serverTimezone=Hongkong&useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
+      username: ccb
+      password: Cl0vdsec.mysql
+      driverClassName: com.mysql.cj.jdbc.Driver
+      initialSize: 10
+      maxIdle: 20
+      minIdle: 10
+      maxTotal: 100

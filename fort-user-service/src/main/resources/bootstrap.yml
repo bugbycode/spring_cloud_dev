@@ -1,0 +1,42 @@
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+  application:
+    name: user
+  cloud:
+    config:
+      username: config
+      password: Cl0vdsec.sansoft
+      request-read-timeout: 5000
+      request-connect-timeout: 60000
+      fail-fast: true #失败时重试
+      retry: #请求配置中心重试配置
+        multiplier: 1000 #重试初始间隔 单位毫秒
+        initial-interval: 2 #下一间隔的剩数，默认为1.1，比如初始重试间隔为1000毫秒，那么下次失败后的重试间隔为1000x1.1= 1100毫秒
+        max-interval: 5000 # 最大间隔时间，默认2000毫秒。
+        max-attempts: 10 #最多重试次数 默认为6次
+      profile: dev
+#      label: master #配置中心采用本地文件时该参数可有可无
+      name: ${spring.application.name}
+      discovery:
+        enabled: true
+        serviceId: config
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:Cl0vdsec.eureka@localhost:8761/eureka/
+feign:
+  hystrix:
+    enabled: true #启用熔断机制
+ribbon:
+  ConnectTimeout: 10000 # 连接超时时间(ms)
+  ReadTimeout: 10000 # 通信超时时间(ms)
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 180000 # 熔断超时时长：180000ms
+          strategy: SEMAPHORE
