@@ -1,6 +1,8 @@
 # spring_cloud_dev
 Spring cloud Security Oauth2 本地事务、分布式事务练习
 
+本项目为前后端分离项目的服务端。
+
 项目说明：
 
 1、fort-commons、fort-*-commons为公共依赖包
@@ -16,8 +18,6 @@ Spring cloud Security Oauth2 本地事务、分布式事务练习
 3、项目中所有的配置统一使用配置中心微服务（fort-config-service）管理
 
 4、分布式事务使用seata实现
-
-本项目为前后端分离项目的服务端。
 
 项目启动顺序说明：
 
