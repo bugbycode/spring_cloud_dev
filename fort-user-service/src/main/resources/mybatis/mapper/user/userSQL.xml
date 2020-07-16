@@ -25,7 +25,7 @@
 		<where>
 			<if test="keyword != null and keyword != ''">
 				<![CDATA[
-					(name LIKE CONCAT('%},#{keyword},'%') OR username LIKE CONCAT('%},#{keyword},'%'))
+					(name LIKE CONCAT('%',#{keyword},'%') OR username LIKE CONCAT('%',#{keyword},'%'))
 				]]>
 			</if>
 		</where>
@@ -38,7 +38,7 @@
 		<where>
 			<if test="keyword != null and keyword != ''">
 				<![CDATA[
-					(name LIKE CONCAT('%},#{keyword},'%') OR username LIKE CONCAT('%},#{keyword},'%'))
+					(name LIKE CONCAT('%',#{keyword},'%') OR username LIKE CONCAT('%',#{keyword},'%'))
 				]]>
 			</if>
 		</where>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fort.mapper.asset.AssetMapper">
+	<resultMap type="asset" id="assetResult">
+		<result property="id" 			column="id"/>
+		<result property="name" 		column="name"/>
+		<result property="ip" 			column="ip"/>
+		<result property="osName" 		column="os_name"/>
+		<result property="osVersion" 	column="os_version"/>
+		<result property="memo" 		column="memo"/>
+		<result property="status" 		column="status"/>
+		<result property="createTime" 	column="create_time"/>
+		<result property="updateTime" 	column="update_time"/>
+		<association property="protocolList" 	column="id" select="queryProtocolByAssetId"/>
+		<association property="accountList" 	column="id" select="queryAccountByAssetId"/>
+	</resultMap>
+	
+	<resultMap type="account" id="accountResult">
+		<result property="id" 			column="id"/>
+		<result property="name" 		column="name"/>
+		<result property="password" 	column="password"/>
+		<result property="type" 		column="type"/>
+		<result property="assetId" 		column="asset_id"/>
+	</resultMap>
+	
+	<resultMap type="protocol" id="protocolResult">
+		<result property="id" 			column="id"/>
+		<result property="type" 		column="type"/>
+		<result property="port" 		column="port"/>
+		<result property="status" 		column="status"/>
+		<result property="assetId" 		column="asset_id"/>
+	</resultMap>
+	
+	<select id="query" resultMap="assetResult">
+		<![CDATA[
+			SELECT 
+			  a.`id`,
+			  a.`name`,
+			  a.`ip`,
+			  a.`os_name`,
+			  a.`os_version`,
+			  a.`memo`,
+			  a.`status`,
+			  a.`create_time`,
+			  a.`update_time`
+			FROM `asset` a
+		]]>
+		<where>
+			<if test="keyword != null and keyword != ''">
+				<![CDATA[
+					(a.name LIKE CONCAT('%',#{keyword},'%') OR a.ip LIKE CONCAT('%',#{keyword},'%'))
+				]]>
+			</if>
+		</where>
+	</select>
+	
+	<select id="count" resultType="int">
+		<![CDATA[
+			SELECT COUNT(a.`id`) FROM `asset` a
+		]]>
+		<where>
+			<if test="keyword != null and keyword != ''">
+				<![CDATA[
+					(a.name LIKE CONCAT('%',#{keyword},'%') OR a.ip LIKE CONCAT('%',#{keyword},'%'))
+				]]>
+			</if>
+		</where>
+	</select>
+	
+	<select id="queryAccountByAssetId" resultMap="accountResult">
+		<![CDATA[
+			SELECT 
+			  `id`,
+			  `name`,
+			  `password`,
+			  `type`,
+			  `asset_id` 
+			FROM `account` WHERE `asset_id` = #{id}
+		]]>
+	</select>
+	
+	<select id="queryProtocolByAssetId" resultMap="protocolResult">
+		<![CDATA[
+			SELECT 
+			  `id`,
+			  `type`,
+			  `port`,
+			  `status`,
+			  `asset_id` 
+			FROM `protocol` WHERE `asset_id` = #{id}
+		]]>
+	</select>
+</mapper>

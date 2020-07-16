@@ -44,5 +44,7 @@
     <module>fort-gateway-service</module>
     <module>fort-user-service</module>
     <module>fort-oauth2-commons</module>
+    <module>fort-asset-service</module>
+    <module>fort-asset-commons</module>
   </modules>
 </project>
