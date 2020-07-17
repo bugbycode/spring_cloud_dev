@@ -13,4 +13,32 @@ public interface AssetService {
 	 * @return
 	 */
 	public SearchResult<Asset> query(String keyword,int offset,int limit);
+	
+	/**
+	 * 根据设备ID修改设备信息
+	 * @param asset
+	 * @return
+	 */
+	public int updateById(Asset asset);
+	
+	/**
+	 * 添加设备信息
+	 * @param asset
+	 * @return
+	 */
+	public int insert(Asset asset);
+	
+	/**
+	 * 根据设备ID删除设备信息
+	 * @param id
+	 * @return
+	 */
+	public int deleteById(long id);
+	
+	/**
+	 * 根据设备ID查询设备信息
+	 * @param id
+	 * @return
+	 */
+	public Asset queryById(long id);
 }

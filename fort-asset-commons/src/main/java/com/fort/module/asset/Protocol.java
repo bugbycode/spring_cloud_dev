@@ -22,7 +22,7 @@ public class Protocol implements Serializable {
 	
 	private String typeLabel;//协议类型名称 用于界面人性化展示 类型定义参考枚举类 com.fort.module.asset.ProtocolType
 	
-	private int port;//协议端口号
+	private Integer port;//协议端口号
 	
 	private int status;//协议是否被启用 类型定义参考枚举类 com.fort.module.asset.ProtocolStatus
 	
@@ -54,11 +54,11 @@ public class Protocol implements Serializable {
 		this.type = type;
 	}
 
-	public int getPort() {
+	public Integer getPort() {
 		return port;
 	}
 
-	public void setPort(int port) {
+	public void setPort(Integer port) {
 		this.port = port;
 	}
 

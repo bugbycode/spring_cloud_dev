@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 
 import com.fort.mapper.role.RoleMapper;
 import com.fort.mapper.user.UserMapper;
@@ -61,6 +62,12 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public int insert(User user) {
 		try {
+			String username = user.getUsername();
+			User tmp = findByUsername(username);
+			if(tmp != null) {
+				throw new RuntimeException("账号信息重复");
+			}
+			
 			Long roleId = user.getRoleId();
 			if(roleId == null || roleId == 0) {
 				throw new RuntimeException("请选择角色信息");
@@ -83,7 +90,15 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public int updateById(User user) {
+		User tmp = queryById(user.getId());
+		if(tmp == null) {
+			throw new AccessDeniedException("该用户已被删除");
+		}
 		try {
+			user.setUsername(tmp.getUsername());
+			if(StringUtils.isEmpty(user.getPassword())) {
+				user.setPassword(tmp.getPassword());
+			}
 			return userMapper.updateById(user);
 		} catch (Exception e) {
 			logger.error(e.getLocalizedMessage());

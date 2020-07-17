@@ -54,6 +54,14 @@
 				]]>
 			</if>
 		</where>
+		<![CDATA[
+			ORDER BY a.create_time DESC,a.update_time DESC 
+		]]>
+		<if test="limit != '' and limit != null">
+			<![CDATA[
+				LIMIT #{offset},#{limit}
+			]]>
+		</if>
 	</select>
 	
 	<select id="count" resultType="int">
@@ -92,4 +100,69 @@
 			FROM `protocol` WHERE `asset_id` = #{id}
 		]]>
 	</select>
+	
+	<select id="queryById" parameterType="long" resultMap="assetResult">
+		<![CDATA[
+			SELECT 
+			  a.`id`,
+			  a.`name`,
+			  a.`ip`,
+			  a.`os_name`,
+			  a.`os_version`,
+			  a.`memo`,
+			  a.`status`,
+			  a.`create_time`,
+			  a.`update_time`
+			FROM `asset` a WHERE a.id = #{value}
+		]]>
+	</select>
+	
+	<update id="updateById" parameterType="asset">
+		<![CDATA[
+			UPDATE 
+			  `asset`
+			SET
+			  `name` = #{name},
+			  `ip` = #{ip},
+			  `os_name` = #{osName},
+			  `os_version` = #{osVersion},
+			  `memo` = #{memo},
+			  `status` = #{status},
+			  `update_time` = #{updateTime}
+			WHERE `id` = #{id}
+		]]>
+	</update>
+	
+	<insert id="insert" parameterType="asset">
+		<![CDATA[
+			INSERT INTO `asset` (
+			  `name`,
+			  `ip`,
+			  `os_name`,
+			  `os_version`,
+			  `memo`,
+			  `status`,
+			  `create_time`
+			) VALUES (
+			    #{name},
+			    #{ip},
+			    #{osName},
+			    #{osVersion},
+			    #{memo},
+			    #{status},
+			    #{createTime}
+			  )
+		]]>
+		<selectKey keyProperty="id" resultType="java.lang.Long">
+            <![CDATA[
+				SELECT @@IDENTITY AS id
+			]]>
+        </selectKey>
+	</insert>
+	
+	<delete id="deleteById" parameterType="long">
+		<![CDATA[
+			DELETE FROM `asset` WHERE `id` = #{id}
+		]]>
+	</delete>
 </mapper>

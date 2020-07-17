@@ -29,6 +29,11 @@
 				]]>
 			</if>
 		</where>
+		<if test="limit != '' and limit != null">
+			<![CDATA[
+				LIMIT #{offset},#{limit}
+			]]>
+		</if>
 	</select>
 	
 	<select id="count" resultType="int">
