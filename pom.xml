@@ -46,5 +46,8 @@
     <module>fort-oauth2-commons</module>
     <module>fort-asset-service</module>
     <module>fort-asset-commons</module>
+    <module>fort-datasource-commons</module>
+    <module>fort-rule-service</module>
+    <module>fort-rule-commons</module>
   </modules>
 </project>

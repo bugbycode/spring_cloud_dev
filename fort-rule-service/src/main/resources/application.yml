@@ -1,0 +1,6 @@
+server:
+  port: 8095
+eureka:
+  client:
+    healthcheck:
+      enabled: true #启用健康检查 

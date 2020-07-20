@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fort.mapper.rule.RuleMapper">
+	<resultMap type="rule" id="ruleResult">
+		<result property="id" 						column="id"/>
+		<result property="assetId" 					column="asset_id"/>
+		<result property="assetName" 				column="asset_name"/>
+		<result property="assetIp" 					column="asset_ip"/>
+		<result property="osName" 					column="os_name"/>
+		<result property="osVersion" 				column="os_version"/>
+		<result property="account" 					column="account"/>
+		<result property="protocol" 				column="protocol"/>
+		<result property="username" 				column="username"/>
+		<result property="fullName" 				column="full_name"/>
+	</resultMap>
+	
+	<select id="query" resultMap="ruleResult">
+		<![CDATA[
+			select * from rule
+		]]>
+		<if test="limit != '' and limit != null">
+			<![CDATA[
+				LIMIT #{offset},#{limit}
+			]]>
+		</if>
+	</select>
+	
+	<select id="count" resultType="int">
+		<![CDATA[
+			select COUNT(*) from rule
+		]]>
+	</select>
+	
+	<insert id="insert">
+		<![CDATA[
+			INSERT INTO `rule` (
+			  `asset_id`,
+			  `asset_name`,
+			  `asset_ip`,
+			  `os_name`,
+			  `os_version`,
+			  `account`,
+			  `protocol`,
+			  `username`,
+			  `full_name`
+			) VALUES (
+			    #{assetId},
+			    #{assetName},
+			    #{assetIp},
+			    #{osName},
+			    #{osVersion},
+			    #{account},
+			    #{protocol},
+			    #{username},
+			    #{fullName}
+			)
+		]]>
+	</insert>
+	
+	<delete id="deleteById" parameterType="long">
+		<![CDATA[
+			DELETE FROM `rule` WHERE id = #{id}
+		]]>
+	</delete>
+	
+	<select id="findRuleInfo" resultMap="ruleResult">
+		<![CDATA[
+			select * from rule
+		]]>
+		<where>
+			<if test="assetId != null and assetId != ''">
+				<![CDATA[
+					AND asset_id = #{assetId}
+				]]>
+			</if>
+			<if test="account != null and account != ''">
+				<![CDATA[
+					AND account = #{account}
+				]]>
+			</if>
+			<if test="protocol > -1">
+				<![CDATA[
+					AND protocol = #{protocol}
+				]]>
+			</if>
+			<if test="username != null and username != ''">
+				<![CDATA[
+					AND username = #{username}
+				]]>
+			</if>
+		</where>
+	</select>
+	
+	<update id="updateById" parameterType="rule">
+		<![CDATA[
+			UPDATE 
+			  `rule` 
+			SET
+			  `asset_id` = #{assetId},
+			  `asset_name` = #{assetName},
+			  `asset_ip` = #{assetIp},
+			  `os_name` = #{osName},
+			  `os_version` = #{osVersion},
+			  `account` = #{account},
+			  `protocol` = #{protocol},
+			  `username` = #{username},
+			  `full_name` = #{fullName} 
+			WHERE `id` = #{id}
+		]]>
+	</update>
+</mapper>
