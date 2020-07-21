@@ -17,4 +17,6 @@ public interface RuleService {
 	public int insert(Rule r);
 	
 	public int updateById(Rule r);
+	
+	public int insert(List<Rule> ruleList);
 }

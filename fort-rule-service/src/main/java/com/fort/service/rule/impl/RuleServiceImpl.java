@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import com.fort.mapper.rule.RuleMapper;
 import com.fort.module.rule.Rule;
@@ -50,6 +51,20 @@ public class RuleServiceImpl implements RuleService {
 	@Override
 	public int insert(Rule r) {
 		return ruleMapper.insert(r);
+	}
+
+	@Override
+	public int insert(List<Rule> ruleList) {
+		int rows = 0;
+		if(!CollectionUtils.isEmpty(ruleList)) {
+			for(Rule r : ruleList) {
+				List<Rule> dbRule = findRuleInfo(r.getAssetId(), r.getAccount(), r.getProtocol(), r.getUsername());
+				if(CollectionUtils.isEmpty(dbRule)) {
+					rows += insert(r);
+				}
+			}
+		}
+		return rows;
 	}
 
 }

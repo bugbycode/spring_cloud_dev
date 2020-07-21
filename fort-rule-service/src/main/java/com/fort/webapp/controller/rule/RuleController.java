@@ -50,7 +50,7 @@ public class RuleController {
 	}
 	
 	@PostMapping("/insert")
-	public int insert(@RequestBody Rule r) {
-		return ruleService.insert(r);
+	public int insert(@RequestBody List<Rule> ruleList) {
+		return ruleService.insert(ruleList);
 	}
 }
