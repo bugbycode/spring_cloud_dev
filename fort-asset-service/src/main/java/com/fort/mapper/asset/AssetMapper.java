@@ -57,4 +57,11 @@ public interface AssetMapper{
 	 */
 	public int deleteById(long id);
 	
+	/**
+	 * 根据设备名称查询单一条设备信息
+	 * @param name
+	 * @return
+	 */
+	public Asset queryByName(String name);
+	
 }

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
+import com.fort.feign.rule.RuleFeignClient;
 import com.fort.mapper.asset.AccountMapper;
 import com.fort.mapper.asset.AssetMapper;
 import com.fort.mapper.asset.ProtocolMapper;
@@ -19,6 +20,7 @@ import com.fort.module.asset.AssetStatus;
 import com.fort.module.asset.Protocol;
 import com.fort.module.asset.ProtocolStatus;
 import com.fort.module.asset.ProtocolType;
+import com.fort.module.rule.Rule;
 import com.fort.service.asset.AssetService;
 import com.util.page.Page;
 import com.util.page.SearchResult;
@@ -34,6 +36,9 @@ public class AssetServiceImpl implements AssetService {
 	
 	@Autowired
 	private ProtocolMapper protocolMapper;
+	
+	@Autowired
+	private RuleFeignClient ruleFeignClient;
 	
 	@Override
 	public SearchResult<Asset> query(String keyword, int offset, int limit) {
@@ -71,6 +76,8 @@ public class AssetServiceImpl implements AssetService {
 			throw new AccessDeniedException("该设备已被删除");
 		}
 		try {
+
+			Asset dbAsset = assetMapper.queryByName(asset.getName());
 			
 			asset.setUpdateTime(new Date());
 			int rows = assetMapper.updateById(asset);
@@ -109,7 +116,10 @@ public class AssetServiceImpl implements AssetService {
 					protocolMapper.insert(pro);
 				} else {
 					pro.setId(dbPro.getId());
-					protocolMapper.updateById(pro);
+					int r = protocolMapper.updateById(pro);
+					if (r < 0) {
+						throw new RuntimeException("修改授权规则发生异常");
+					}
 				}
 			}
 			
@@ -119,6 +129,12 @@ public class AssetServiceImpl implements AssetService {
 				Protocol newPro = findByType(type, protocolList);
 				if(newPro == null) {
 					protocolMapper.deleteById(pro.getId());
+					List<Rule> ruleList = ruleFeignClient.findRuleInfo(assetId, null, type, null);
+					if(!CollectionUtils.isEmpty(ruleList)) {
+						for(Rule r : ruleList) {
+							ruleFeignClient.deleteById(r.getId());
+						}
+					}
 				}
 			}
 			
@@ -141,7 +157,10 @@ public class AssetServiceImpl implements AssetService {
 				} else {
 					dbAcc.setPassword(acc.getPassword());
 					dbAcc.setType(acc.getType());
-					accountMapper.updateById(dbAcc);
+					int r = accountMapper.updateById(dbAcc);
+					if (r < 0) {
+						throw new RuntimeException("修改授权规则发生异常");
+					}
 				}
 			}
 			//删除账号
@@ -150,7 +169,31 @@ public class AssetServiceImpl implements AssetService {
 				Account newAcc = findByName(name, accountList);
 				if(newAcc == null) {
 					accountMapper.deleteById(acc.getId());
+					List<Rule> ruleList = ruleFeignClient.findRuleInfo(assetId, acc.getName(), -1, null);
+					if(!CollectionUtils.isEmpty(ruleList)) {
+						for(Rule r : ruleList) {
+							ruleFeignClient.deleteById(r.getId());
+						}
+					}
 				}
+			}
+			//更新授权规则的设备信息
+			List<Rule> ruleList = ruleFeignClient.findRuleInfo(assetId, null, -1, null);
+			if(!CollectionUtils.isEmpty(ruleList)) {
+				for(Rule r : ruleList) {
+					r.setAssetName(asset.getName());
+					r.setAssetIp(asset.getIp());
+					r.setOsName(asset.getOsName());
+					r.setOsVersion(asset.getOsVersion());
+					int rw = ruleFeignClient.updateById(r);
+					if (rw < 0) {
+						throw new RuntimeException("修改授权规则发生异常");
+					}
+				}
+			}
+			
+			if(dbAsset != null && dbAsset.getId() != oldAsset.getId()) {
+				throw new RuntimeException("设备名称重复");
 			}
 			
 			return rows;

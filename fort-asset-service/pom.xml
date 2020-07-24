@@ -86,6 +86,11 @@
 			<artifactId>fort-datasource-commons</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.fort</groupId>
+			<artifactId>fort-rule-commons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>fort-asset-service</finalName>

@@ -1,8 +1,8 @@
 spring:
   oauth:
-    clientId: sansanyuncloud_web #客户端ID
-    clientSecret: sansanyuncloud_web #客户端私钥
-    scope: web #授权范围 web
+    clientId: sansanyuncloud_api #客户端ID
+    clientSecret: sansanyuncloud_api #客户端私钥
+    scope: cloud #授权范围 web
   server:
     datasource:
       url: jdbc:mysql://172.19.0.100:3306/fort?serverTimezone=Hongkong&useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
@@ -13,3 +13,66 @@ spring:
       maxIdle: 20
       minIdle: 10
       maxTotal: 100
+# seata 配置      
+seata:
+  enabled: true
+  application-id: seata-server
+  tx-service-group: my_test_tx_group
+  enable-auto-data-source-proxy: true
+  use-jdk-proxy: false
+  excludes-for-auto-proxying: firstClassNameForExclude,secondClassNameForExclude
+  client:
+    rm:
+      async-commit-buffer-limit: 1000
+      report-retry-count: 5
+      table-meta-check-enable: false
+      report-success-enable: false
+      saga-branch-register-enable: false
+      lock:
+        retry-interval: 10
+        retry-times: 30
+        retry-policy-branch-rollback-on-conflict: true
+    tm:
+      degrade-check: false
+      degrade-check-period: 2000
+      degrade-check-allow-times: 10
+      commit-retry-count: 5
+      rollback-retry-count: 5
+    undo:
+      data-validation: true
+      log-serialization: jackson
+      log-table: undo_log
+      only-care-update-columns: true
+    log:
+      exceptionRate: 100
+  service:
+    vgroupMapping:
+      my_test_tx_group: seata-server
+    enable-degrade: false
+    disable-global-transaction: false
+  transport:
+    shutdown:
+      wait: 3
+    thread-factory:
+      boss-thread-prefix: NettyBoss
+      worker-thread-prefix: NettyServerNIOWorker
+      server-executor-thread-prefix: NettyServerBizHandler
+      share-boss-worker: false
+      client-selector-thread-prefix: NettyClientSelector
+      client-selector-thread-size: 1
+      client-worker-thread-prefix: NettyClientWorkerThread
+      worker-thread-size: default
+      boss-thread-size: 1
+    type: TCP
+    server: NIO
+    heartbeat: true
+    serialization: seata
+    compressor: none
+    enable-client-batch-send-request: true
+  config:
+    type: file
+  registry:
+    type: eureka
+    eureka:
+      weight: 1
+      service-url: http://discovery:Cl0vdsec.eureka@localhost:8761/eureka

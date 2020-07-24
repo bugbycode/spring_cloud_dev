@@ -16,6 +16,9 @@
         <dependent-module archiveName="fort-datasource-commons-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fort-datasource-commons/fort-datasource-commons">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="fort-rule-commons-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fort-rule-commons/fort-rule-commons">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="fort-asset-service"/>
         <property name="java-output-path" value="/fort-asset-service/target/classes"/>
     </wb-module>

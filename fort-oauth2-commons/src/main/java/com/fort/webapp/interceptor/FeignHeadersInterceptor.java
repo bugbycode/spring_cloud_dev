@@ -20,6 +20,7 @@ import com.fort.feign.oauth.OauthFeign;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
+import io.seata.core.context.RootContext;
 
 /**
  * 传递头信息设置 此功能需要配置Hystrix隔离策略配置为 hystrix.command.default.execution.isolation.strategy: SEMAPHORE
@@ -44,6 +45,9 @@ public class FeignHeadersInterceptor implements RequestInterceptor {
 	
 	@Override
 	public void apply(RequestTemplate template) {
+		
+		String xid = RootContext.getXID();
+		logger.info("My xid2 as : " + xid);
 		
 		HttpServletRequest request = getHttpServletRequest();
 

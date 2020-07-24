@@ -33,6 +33,22 @@
 		<result property="assetId" 		column="asset_id"/>
 	</resultMap>
 	
+	<select id="queryByName" resultMap="assetResult">
+		<![CDATA[
+			SELECT 
+			  a.`id`,
+			  a.`name`,
+			  a.`ip`,
+			  a.`os_name`,
+			  a.`os_version`,
+			  a.`memo`,
+			  a.`status`,
+			  a.`create_time`,
+			  a.`update_time`
+			FROM `asset` a WHERE a.name = #{name} LIMIT 1
+		]]>
+	</select>
+	
 	<select id="query" resultMap="assetResult">
 		<![CDATA[
 			SELECT 

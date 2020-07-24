@@ -45,7 +45,12 @@ public class RuleServiceImpl implements RuleService {
 
 	@Override
 	public int updateById(Rule r) {
-		return ruleMapper.updateById(r);
+		try {
+			return ruleMapper.updateById(r);
+		}catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("更新授权信息时发生异常，" + e.getMessage());
+		}
 	}
 
 	@Override
