@@ -5,6 +5,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -35,12 +36,11 @@ public class RuleController {
 		return ruleService.query(keyword, offset, limit);
 	}
 	
-	@GlobalTransactional
 	@PostMapping("/deleteById")
 	public int deleteById(@RequestParam("id") long id) {
 		return ruleService.deleteById(id);
 	}
-	
+
 	@GetMapping("/findRuleInfo")
 	public List<Rule> findRuleInfo(@RequestParam(name = "assetId",defaultValue = "0") long assetId, 
 			@RequestParam(name = "account",defaultValue = "") 
@@ -54,13 +54,18 @@ public class RuleController {
 		return ruleService.findRuleInfo(assetId, account, protocol, username);
 	}
 	
-	@GlobalTransactional
 	@PostMapping("/updateById")
 	public int updateById(@RequestBody Rule r) {
-		return ruleService.updateById(r);
+		String xid = RootContext.getXID();
+		logger.info("My xid4 as : " + xid);
+		try {
+			return ruleService.updateById(r);
+		}catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
 	}
 	
-	@GlobalTransactional
 	@PostMapping("/insert")
 	public int insert(@RequestBody List<Rule> ruleList) {
 		return ruleService.insert(ruleList);

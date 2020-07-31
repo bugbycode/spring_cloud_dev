@@ -1,6 +1,7 @@
 package com.fort.mapper.asset;
 
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import com.fort.module.asset.Account;
 

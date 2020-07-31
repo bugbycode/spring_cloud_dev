@@ -1,5 +1,6 @@
 package com.fort.webapp.controller.asset;
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +43,13 @@ public class AssetController {
 	public int updateById(@RequestBody Asset asset) {
 		String xid = RootContext.getXID();
 		logger.info("My xid as : " + xid);
-		return assetService.updateById(asset);
+		
+		int rows = assetService.updateById(asset);
+
+		if("mytest".equals(asset.getName())) {
+			throw new RuntimeException("自定义异常");
+		}
+		return rows;
 	}
 	
 	@GlobalTransactional

@@ -1,6 +1,10 @@
 package com.fort.service.asset;
 
+import java.util.List;
+
+import com.fort.module.asset.Account;
 import com.fort.module.asset.Asset;
+import com.fort.module.asset.Protocol;
 import com.util.page.SearchResult;
 
 public interface AssetService {
@@ -41,4 +45,15 @@ public interface AssetService {
 	 * @return
 	 */
 	public Asset queryById(long id);
+	
+	/**
+	 * 根据设备名称查询设备信息
+	 * @param name
+	 * @return
+	 */
+	public Asset queryByName(String name);
+	
+	public Account findByName(String name,List<Account> accList);
+	
+	public Protocol findByType(int type,List<Protocol> proList);
 }

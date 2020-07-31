@@ -27,16 +27,17 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery:Cl0vdsec.eureka@localhost:8761/eureka/
 feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+#        loggerLevel: basic
   hystrix:
     enabled: true #启用熔断机制
-ribbon:
-  ConnectTimeout: 10000 # 连接超时时间(ms)
-  ReadTimeout: 10000 # 通信超时时间(ms)
 hystrix:
   command:
     default:
       execution:
         isolation:
-          thread:
-            timeoutInMilliseconds: 180000 # 熔断超时时长：180000ms
           strategy: SEMAPHORE

@@ -5,19 +5,16 @@ spring:
     scope: cloud #授权范围 web
   server:
     datasource:
-      url: jdbc:mysql://172.19.0.100:3306/fort?serverTimezone=Hongkong&useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
+      url: jdbc:mysql://172.19.0.100:3306/rule?serverTimezone=Hongkong&useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
       username: ccb
       password: Cl0vdsec.mysql
       driverClassName: com.mysql.cj.jdbc.Driver
-      initialSize: 10
-      maxIdle: 20
-      minIdle: 10
-      maxTotal: 100
+      type: com.alibaba.druid.pool.DruidDataSource
 # seata 配置      
 seata:
   enabled: true
-  application-id: seata-server
-  tx-service-group: my_test_tx_group
+  application-id: rule
+  tx-service-group: rule_group
   enable-auto-data-source-proxy: true
   use-jdk-proxy: false
   excludes-for-auto-proxying: firstClassNameForExclude,secondClassNameForExclude
@@ -47,7 +44,7 @@ seata:
       exceptionRate: 100
   service:
     vgroupMapping:
-      my_test_tx_group: seata-server
+      rule_group: seata-server
     enable-degrade: false
     disable-global-transaction: false
   transport:

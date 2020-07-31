@@ -178,6 +178,7 @@ public class AssetServiceImpl implements AssetService {
 				}
 			}
 			//更新授权规则的设备信息
+			
 			List<Rule> ruleList = ruleFeignClient.findRuleInfo(assetId, null, -1, null);
 			if(!CollectionUtils.isEmpty(ruleList)) {
 				for(Rule r : ruleList) {
@@ -276,7 +277,7 @@ public class AssetServiceImpl implements AssetService {
 		}
 	}
 	
-	private Account findByName(String name,List<Account> accList) {
+	public Account findByName(String name,List<Account> accList) {
 		for(Account acc : accList) {
 			if(acc.getName().equals(name)) {
 				return acc;
@@ -285,13 +286,18 @@ public class AssetServiceImpl implements AssetService {
 		return null;
 	}
 	
-	private Protocol findByType(int type,List<Protocol> proList) {
+	public Protocol findByType(int type,List<Protocol> proList) {
 		for(Protocol pro : proList) {
 			if(pro.getType() == type) {
 				return pro;
 			}
 		}
 		return null;
+	}
+
+	@Override
+	public Asset queryByName(String name) {
+		return assetMapper.queryByName(name);
 	}
 
 }

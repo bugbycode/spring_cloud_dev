@@ -1,5 +1,7 @@
 package com.fort.mapper.asset;
 
+import org.springframework.stereotype.Repository;
+
 import com.fort.module.asset.Protocol;
 
 public interface ProtocolMapper {

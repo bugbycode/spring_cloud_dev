@@ -1,6 +1,7 @@
 package com.fort.webapp.controller.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fort.module.user.User;
 import com.fort.service.user.UserService;
 import com.util.page.SearchResult;
+
+import io.seata.spring.annotation.GlobalTransactional;
 
 @RestController
 @RequestMapping("/user")
@@ -35,9 +38,14 @@ public class UserController {
 	 * @param user
 	 * @return
 	 */
+	@GlobalTransactional
 	@PostMapping("/insert")
 	public int insert(@RequestBody User user) {
-		return userService.insert(user);
+		int rows = userService.insert(user);
+		if("my".equals(user.getUsername())) {
+			throw new AccessDeniedException("非法用户名");
+		}
+		return rows;
 	}
 	
 	/**
@@ -55,6 +63,7 @@ public class UserController {
 	 * @param id 用户ID
 	 * @return
 	 */
+	@GlobalTransactional
 	@PostMapping("/deleteById")
 	public int deleteById(long id) {
 		return userService.deleteById(id);

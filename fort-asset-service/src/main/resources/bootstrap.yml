@@ -5,6 +5,9 @@ spring:
   application:
     name: asset
   cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
     config:
       username: config
       password: Cl0vdsec.sansoft
@@ -21,22 +24,23 @@ spring:
       name: ${spring.application.name}
       discovery:
         enabled: true
-        serviceId: config
+        serviceId: config     
 eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery:Cl0vdsec.eureka@localhost:8761/eureka/
 feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: FULL
   hystrix:
     enabled: true #启用熔断机制
-ribbon:
-  ConnectTimeout: 10000 # 连接超时时间(ms)
-  ReadTimeout: 10000 # 通信超时时间(ms)
 hystrix:
   command:
     default:
       execution:
         isolation:
-          thread:
-            timeoutInMilliseconds: 180000 # 熔断超时时长：180000ms
           strategy: SEMAPHORE
