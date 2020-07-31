@@ -5,11 +5,14 @@ spring:
     scope: cloud #授权范围 web
   server:
     datasource:
-      url: jdbc:mysql://172.19.0.100:3306/asset?serverTimezone=Hongkong&useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
-      username: ccb
+      url: jdbc:mysql://localhost:3306/fort?serverTimezone=Hongkong&useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
+      username: root
       password: Cl0vdsec.mysql
       driverClassName: com.mysql.cj.jdbc.Driver
-      type: com.alibaba.druid.pool.DruidDataSource
+      initialSize: 10
+      maxIdle: 20
+      minIdle: 10
+      maxTotal: 100
 # seata 配置      
 seata:
   enabled: true

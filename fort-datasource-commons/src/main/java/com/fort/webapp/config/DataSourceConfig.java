@@ -3,6 +3,7 @@ package com.fort.webapp.config;
 import javax.annotation.Resource;
 import javax.sql.DataSource;
 
+import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
@@ -14,16 +15,14 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
-import com.alibaba.druid.pool.DruidDataSource;
-
 @Configuration
 @MapperScan(basePackages = "com.fort.mapper",sqlSessionFactoryRef = "sqlSessionFactory")
 public class DataSourceConfig {
 	
-	@Bean("druidSource")
+	@Bean("dataSource")
 	@ConfigurationProperties(prefix="spring.server.datasource")
 	public DataSource getDataSource() {
-		return new DruidDataSource();
+		return DataSourceBuilder.create(BasicDataSource.class.getClassLoader()).build();
 	}
 	
 	@Bean("sqlSessionFactory")

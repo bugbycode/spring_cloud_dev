@@ -25,7 +25,6 @@ public class GloblaController {
 	@ExceptionHandler({Exception.class})
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
 	public Map<String,Object> handlerException(Exception e){
-		e.printStackTrace();
 		Map<String,Object> result = new HashMap<String,Object>();
 		result.put("error", "服务器内部错误");
 		result.put("error_description", e.getLocalizedMessage());
@@ -40,7 +39,6 @@ public class GloblaController {
 	@ExceptionHandler({RuntimeException.class})
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
 	public Map<String,Object> handlerRuntimeException(RuntimeException e){
-		e.printStackTrace();
 		Map<String,Object> result = new HashMap<String,Object>();
 		result.put("error", "服务器内部错误");
 		result.put("error_description", e.getLocalizedMessage());

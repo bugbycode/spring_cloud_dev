@@ -8533,3 +8533,842 @@ Using generated security password: 521d91a5-2f82-4389-83ff-b4ebc7c40f6a
 2020-07-31 19:07:16.856 INFO [rpcDispatch_RMROLE_1_6_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32541240398450688 branch 32541242537545728, undo_log deleted with GlobalFinished
 2020-07-31 19:07:16.858 INFO [rpcDispatch_RMROLE_1_6_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
 2020-07-31 19:07:16.983 INFO [http-nio-8094-exec-3][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32541240398450688] rollback status: Rollbacked
+2020-07-31 21:08:33.224 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$3c5f9d85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:34.140 INFO [main][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:08:34.382 INFO [main][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:08:34.385 INFO [main][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/config/asset-dev.yml'}]
+2020-07-31 21:08:34.395 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2020-07-31 21:08:38.886 INFO [main][GenericScope.java:295] - BeanFactory id=f54df41b-a01e-36df-8bfd-d8869984375c
+2020-07-31 21:08:39.080 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$105603bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.084 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.169 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.181 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.188 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.191 INFO [main][SeataAutoConfiguration.java:65] - Automatically configure Seata
+2020-07-31 21:08:39.298 INFO [main][ConfigurationFactory.java:65] - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2020-07-31 21:08:39.312 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.317 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'configFileProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigFileProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.318 INFO [main][ConfigurationFactory.java:123] - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2020-07-31 21:08:39.642 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'serviceProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.ServiceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.644 INFO [main][GlobalTransactionScanner.java:164] - Initializing Global Transaction Clients ... 
+2020-07-31 21:08:39.657 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'threadFactoryProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.ThreadFactoryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.661 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transportProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.TransportProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.764 INFO [main][NettyClientBootstrap.java:147] - NettyClientBootstrap has started
+2020-07-31 21:08:39.764 INFO [main][GlobalTransactionScanner.java:172] - Transaction Manager Client is initialized. applicationId[asset] txServiceGroup[asset_group]
+2020-07-31 21:08:39.783 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rmProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.RmProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:39.783 INFO [main][AsyncWorker.java:125] - Async Commit Buffer Limit: 1000
+2020-07-31 21:08:39.784 INFO [main][ResourceManagerXA.java:40] - ResourceManagerXA init ...
+2020-07-31 21:08:39.797 INFO [main][NettyClientBootstrap.java:147] - NettyClientBootstrap has started
+2020-07-31 21:08:39.797 INFO [main][GlobalTransactionScanner.java:177] - Resource Manager is initialized. applicationId[asset] txServiceGroup[asset_group]
+2020-07-31 21:08:39.797 INFO [main][GlobalTransactionScanner.java:181] - Global Transaction Clients are initialized. 
+2020-07-31 21:08:39.871 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:40.222 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dataSourceConfig' of type [com.fort.webapp.config.DataSourceConfig$$EnhancerBySpringCGLIB$$781c920d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:40.336 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'druidSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:40.383 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:40.398 INFO [main][SeataAutoDataSourceProxyCreator.java:45] - Auto proxy of [druidSource]
+2020-07-31 21:08:40.469 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:40.475 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:40.481 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionAdviceConfig' of type [com.fort.webapp.config.TransactionAdviceConfig$$EnhancerBySpringCGLIB$$5986099c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:40.488 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:40.489 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:40.490 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:40.508 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:08:41.111 INFO [main][TomcatWebServer.java:92] - Tomcat initialized with port(s): 8094 (http)
+2020-07-31 21:08:41.132 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8094"]
+2020-07-31 21:08:41.134 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2020-07-31 21:08:41.135 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-07-31 21:08:41.414 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2020-07-31 21:08:41.414 INFO [main][ServletWebServerApplicationContext.java:284] - Root WebApplicationContext: initialization completed in 6984 ms
+2020-07-31 21:08:41.608 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-31 21:08:41.637 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@79155a9d
+2020-07-31 21:08:43.605 INFO [main][GlobalTransactionScanner.java:231] - Bean[com.fort.webapp.controller.asset.AssetController] with name [assetController] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-07-31 21:08:43.775 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-31 21:08:44.109 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-31 21:08:44.609 INFO [main][UserDetailsServiceAutoConfiguration.java:86] - 
+
+Using generated security password: fb585343-cbde-4089-809e-fbd772dac8e6
+
+2020-07-31 21:08:44.943 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b4f99e5, org.springframework.security.web.context.SecurityContextPersistenceFilter@54720caf, org.springframework.security.web.header.HeaderWriterFilter@166913c2, org.springframework.security.web.authentication.logout.LogoutFilter@30f94b64, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@47c8ced, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a8efb4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@aca7766, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e594828, org.springframework.security.web.session.SessionManagementFilter@5f9b22c1, org.springframework.security.web.access.ExceptionTranslationFilter@6c8f2e4e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68dc7f43]
+2020-07-31 21:08:45.366 INFO [main][EndpointLinksResolver.java:58] - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-31 21:08:45.457 INFO [main][InstanceInfoFactory.java:72] - Setting initial instance status as: STARTING
+2020-07-31 21:08:45.503 INFO [main][DiscoveryClient.java:371] - Initializing Eureka in region us-east-1
+2020-07-31 21:08:45.577 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-07-31 21:08:45.577 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-07-31 21:08:45.766 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-07-31 21:08:45.766 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-07-31 21:08:46.295 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:08:46.387 INFO [main][DiscoveryClient.java:988] - Disable delta property : false
+2020-07-31 21:08:46.388 INFO [main][DiscoveryClient.java:989] - Single vip registry refresh property : null
+2020-07-31 21:08:46.388 INFO [main][DiscoveryClient.java:990] - Force full registry fetch : false
+2020-07-31 21:08:46.388 INFO [main][DiscoveryClient.java:991] - Application is null : false
+2020-07-31 21:08:46.389 INFO [main][DiscoveryClient.java:992] - Registered Applications size is zero : true
+2020-07-31 21:08:46.389 INFO [main][DiscoveryClient.java:994] - Application version is -1: true
+2020-07-31 21:08:46.389 INFO [main][DiscoveryClient.java:1077] - Getting all instance registry info from the eureka server
+2020-07-31 21:08:46.620 INFO [main][DiscoveryClient.java:1086] - The response status is 200
+2020-07-31 21:08:46.623 INFO [main][DiscoveryClient.java:1301] - Starting heartbeat executor: renew interval is: 30
+2020-07-31 21:08:46.627 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-31 21:08:46.633 INFO [main][DiscoveryClient.java:475] - Discovery Client initialized at timestamp 1596200926631 with initial instances count: 3
+2020-07-31 21:08:46.645 INFO [main][EurekaServiceRegistry.java:41] - Registering application ASSET with eureka with status UP
+2020-07-31 21:08:46.646 INFO [main][DiscoveryClient.java:1337] - Saw local status change event StatusChangeEvent [timestamp=1596200926646, current=UP, previous=STARTING]
+2020-07-31 21:08:46.655 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:08:46.804 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8094"]
+2020-07-31 21:08:46.836 INFO [main][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-31 21:08:46.836 INFO [main][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2020-07-31 21:08:46.852 INFO [main][FrameworkServlet.java:547] - Completed initialization in 15 ms
+2020-07-31 21:08:46.853 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 8094 (http) with context path ''
+2020-07-31 21:08:46.854 INFO [main][EurekaAutoServiceRegistration.java:145] - Updating port to 8094
+2020-07-31 21:08:46.956 INFO [main][StartupInfoLogger.java:61] - Started AssetApplication in 14.949 seconds (JVM running for 16.093)
+2020-07-31 21:08:46.959 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:08:47.162 INFO [DiscoveryClient-InstanceInfoReplicator-0][DruidDataSource.java:983] - {dataSource-1} inited
+2020-07-31 21:08:47.538 INFO [DiscoveryClient-InstanceInfoReplicator-0][EurekaConfigBasedInstanceInfoProvider.java:107] - Setting initial instance status as: STARTING
+2020-07-31 21:08:47.545 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:371] - Initializing Eureka in region us-east-1
+2020-07-31 21:08:47.554 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-07-31 21:08:47.554 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-07-31 21:08:47.554 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-07-31 21:08:47.555 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-07-31 21:08:47.647 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:08:47.650 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:988] - Disable delta property : false
+2020-07-31 21:08:47.651 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:989] - Single vip registry refresh property : null
+2020-07-31 21:08:47.651 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:990] - Force full registry fetch : false
+2020-07-31 21:08:47.651 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:991] - Application is null : false
+2020-07-31 21:08:47.651 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:992] - Registered Applications size is zero : true
+2020-07-31 21:08:47.652 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:994] - Application version is -1: true
+2020-07-31 21:08:47.652 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:1077] - Getting all instance registry info from the eureka server
+2020-07-31 21:08:47.755 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:1086] - The response status is 200
+2020-07-31 21:08:47.758 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:1349] - Not registering with Eureka server per configuration
+2020-07-31 21:08:47.759 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:475] - Discovery Client initialized at timestamp 1596200927759 with initial instances count: 3
+2020-07-31 21:08:47.781 INFO [DiscoveryClient-InstanceInfoReplicator-0][NettyClientChannelManager.java:99] - will connect to 192.168.56.1:8799
+2020-07-31 21:08:47.781 INFO [DiscoveryClient-InstanceInfoReplicator-0][RmNettyRemotingClient.java:244] - RM will register :jdbc:mysql://localhost:3306/fort
+2020-07-31 21:08:47.785 INFO [DiscoveryClient-InstanceInfoReplicator-0][NettyPoolableFactory.java:56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.56.1:8799,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/fort', applicationId='asset', transactionServiceGroup='asset_group'} >
+2020-07-31 21:08:48.388 INFO [DiscoveryClient-InstanceInfoReplicator-0][RmNettyRemotingClient.java:151] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0xc8d80cd6, L:/192.168.56.1:51132 - R:/192.168.56.1:8799]
+2020-07-31 21:08:48.401 INFO [DiscoveryClient-InstanceInfoReplicator-0][NettyPoolableFactory.java:81] - register success, cost 238 ms, version:1.3.0,role:RMROLE,channel:[id: 0xc8d80cd6, L:/192.168.56.1:51132 - R:/192.168.56.1:8799]
+2020-07-31 21:08:48.468 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:854] - DiscoveryClient_ASSET/lucky-PC:asset:8094: registering service...
+2020-07-31 21:08:48.513 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:863] - DiscoveryClient_ASSET/lucky-PC:asset:8094 - registration status: 204
+2020-07-31 21:09:39.754 INFO [timeoutChecker_1_1][NettyClientChannelManager.java:99] - will connect to 192.168.56.1:8799
+2020-07-31 21:09:39.755 INFO [timeoutChecker_1_1][NettyPoolableFactory.java:56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.56.1:8799,msg:< RegisterTMRequest{applicationId='asset', transactionServiceGroup='asset_group'} >
+2020-07-31 21:09:39.769 INFO [timeoutChecker_1_1][TmNettyRemotingClient.java:138] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x5b8eb54c, L:/192.168.56.1:51157 - R:/192.168.56.1:8799]
+2020-07-31 21:09:39.770 INFO [timeoutChecker_1_1][NettyPoolableFactory.java:81] - register success, cost 11 ms, version:1.3.0,role:TMROLE,channel:[id: 0x5b8eb54c, L:/192.168.56.1:51157 - R:/192.168.56.1:8799]
+2020-07-31 21:13:46.406 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:13:47.852 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:13:48.708 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:13:49.017 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:17:20.444 INFO [http-nio-8094-exec-1][TransactionManagerHolder.java:40] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@4dc5ee18
+2020-07-31 21:17:21.274 INFO [http-nio-8094-exec-1][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32573975980675072]
+2020-07-31 21:17:21.275 INFO [http-nio-8094-exec-1][AssetController.java:45] - My xid as : 192.168.56.1:8799:32573975980675072
+2020-07-31 21:17:21.790 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32573975980675072
+2020-07-31 21:17:22.235 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32573975980675072
+2020-07-31 21:17:22.677 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32573975980675072
+2020-07-31 21:17:22.903 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32573975980675072
+2020-07-31 21:17:23.124 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32573975980675072
+2020-07-31 21:17:23.342 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32573975980675072
+2020-07-31 21:17:23.686 INFO [rpcDispatch_RMROLE_1_1_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32573975980675072,branchId=32573986328023040,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:17:23.689 INFO [rpcDispatch_RMROLE_1_1_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32573975980675072 32573986328023040 jdbc:mysql://localhost:3306/fort
+2020-07-31 21:17:23.789 INFO [rpcDispatch_RMROLE_1_1_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:17:23.795 INFO [rpcDispatch_RMROLE_1_1_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:17:24.161 INFO [rpcDispatch_RMROLE_1_1_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32573975980675072 branch 32573986328023040, undo_log deleted with GlobalFinished
+2020-07-31 21:17:24.166 INFO [rpcDispatch_RMROLE_1_1_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 21:17:24.768 INFO [http-nio-8094-exec-1][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32573975980675072] rollback status: Rollbacked
+2020-07-31 21:17:39.335 INFO [http-nio-8094-exec-2][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32574052581249024]
+2020-07-31 21:17:39.336 INFO [http-nio-8094-exec-2][AssetController.java:45] - My xid as : 192.168.56.1:8799:32574052581249024
+2020-07-31 21:17:39.352 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574052581249024
+2020-07-31 21:17:39.469 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574052581249024
+2020-07-31 21:17:39.646 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574052581249024
+2020-07-31 21:17:39.950 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574052581249024
+2020-07-31 21:17:40.236 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574052581249024
+2020-07-31 21:17:40.429 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574052581249024
+2020-07-31 21:17:41.051 INFO [rpcDispatch_RMROLE_1_2_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32574052581249024,branchId=32574059044671488,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:17:41.052 INFO [rpcDispatch_RMROLE_1_2_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32574052581249024 32574059044671488 jdbc:mysql://localhost:3306/fort
+2020-07-31 21:17:41.058 INFO [rpcDispatch_RMROLE_1_2_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:17:41.060 INFO [rpcDispatch_RMROLE_1_2_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:17:41.134 INFO [rpcDispatch_RMROLE_1_2_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32574052581249024 branch 32574059044671488, undo_log deleted with GlobalFinished
+2020-07-31 21:17:41.135 INFO [rpcDispatch_RMROLE_1_2_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 21:17:41.649 INFO [http-nio-8094-exec-2][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32574052581249024] rollback status: Rollbacked
+2020-07-31 21:18:01.151 INFO [http-nio-8094-exec-3][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32574144084185088]
+2020-07-31 21:18:01.151 INFO [http-nio-8094-exec-3][AssetController.java:45] - My xid as : 192.168.56.1:8799:32574144084185088
+2020-07-31 21:18:01.168 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574144084185088
+2020-07-31 21:18:01.291 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574144084185088
+2020-07-31 21:18:01.457 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574144084185088
+2020-07-31 21:18:01.710 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574144084185088
+2020-07-31 21:18:01.870 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574144084185088
+2020-07-31 21:18:02.203 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574144084185088
+2020-07-31 21:18:02.473 INFO [rpcDispatch_RMROLE_1_3_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32574144084185088,branchId=32574149314482176,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:18:02.473 INFO [rpcDispatch_RMROLE_1_3_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32574144084185088 32574149314482176 jdbc:mysql://localhost:3306/fort
+2020-07-31 21:18:02.477 INFO [rpcDispatch_RMROLE_1_3_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:18:02.478 INFO [rpcDispatch_RMROLE_1_3_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:18:02.753 INFO [rpcDispatch_RMROLE_1_3_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32574144084185088 branch 32574149314482176, undo_log deleted with GlobalFinished
+2020-07-31 21:18:02.754 INFO [rpcDispatch_RMROLE_1_3_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 21:18:03.292 INFO [http-nio-8094-exec-3][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32574144084185088] rollback status: Rollbacked
+2020-07-31 21:18:03.506 INFO [http-nio-8094-exec-4][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32574153970159616]
+2020-07-31 21:18:03.506 INFO [http-nio-8094-exec-4][AssetController.java:45] - My xid as : 192.168.56.1:8799:32574153970159616
+2020-07-31 21:18:03.587 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574153970159616
+2020-07-31 21:18:03.705 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574153970159616
+2020-07-31 21:18:03.934 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574153970159616
+2020-07-31 21:18:04.195 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574153970159616
+2020-07-31 21:18:04.391 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574153970159616
+2020-07-31 21:18:04.740 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574153970159616
+2020-07-31 21:18:04.947 INFO [rpcDispatch_RMROLE_1_4_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32574153970159616,branchId=32574159674413056,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:18:04.947 INFO [rpcDispatch_RMROLE_1_4_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32574153970159616 32574159674413056 jdbc:mysql://localhost:3306/fort
+2020-07-31 21:18:04.950 INFO [rpcDispatch_RMROLE_1_4_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:18:04.951 INFO [rpcDispatch_RMROLE_1_4_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:18:05.007 INFO [rpcDispatch_RMROLE_1_4_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32574153970159616 branch 32574159674413056, undo_log deleted with GlobalFinished
+2020-07-31 21:18:05.007 INFO [rpcDispatch_RMROLE_1_4_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 21:18:05.216 INFO [http-nio-8094-exec-4][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32574153970159616] rollback status: Rollbacked
+2020-07-31 21:18:24.064 INFO [http-nio-8094-exec-7][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32574240192466944]
+2020-07-31 21:18:24.065 INFO [http-nio-8094-exec-7][AssetController.java:45] - My xid as : 192.168.56.1:8799:32574240192466944
+2020-07-31 21:18:24.081 INFO [http-nio-8094-exec-7][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574240192466944
+2020-07-31 21:18:24.150 INFO [http-nio-8094-exec-7][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574240192466944
+2020-07-31 21:18:24.255 INFO [http-nio-8094-exec-7][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574240192466944
+2020-07-31 21:18:24.385 INFO [http-nio-8094-exec-7][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574240192466944
+2020-07-31 21:18:24.520 INFO [http-nio-8094-exec-7][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32574240192466944
+2020-07-31 21:18:24.661 INFO [http-nio-8094-exec-7][DefaultGlobalTransaction.java:143] - [192.168.56.1:8799:32574240192466944] commit status: Committed
+2020-07-31 21:18:25.365 INFO [rpcDispatch_RMROLE_1_5_16][RmBranchCommitProcessor.java:56] - rm client handle branch commit process:xid=192.168.56.1:8799:32574240192466944,branchId=32574242537082880,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:18:25.367 INFO [rpcDispatch_RMROLE_1_5_16][AbstractRMHandler.java:96] - Branch committing: 192.168.56.1:8799:32574240192466944 32574242537082880 jdbc:mysql://localhost:3306/fort null
+2020-07-31 21:18:25.369 INFO [rpcDispatch_RMROLE_1_5_16][AbstractRMHandler.java:104] - Branch commit result: PhaseTwo_Committed
+2020-07-31 21:18:46.419 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:18:47.865 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:18:49.080 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:18:49.300 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:23:46.430 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:23:47.877 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:23:49.349 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:23:49.675 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:30:26.683 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$2a1d39ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:27.565 INFO [main][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:30:28.106 INFO [main][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:30:28.122 INFO [main][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/config/asset-dev.yml'}]
+2020-07-31 21:30:28.122 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2020-07-31 21:30:33.684 INFO [main][GenericScope.java:295] - BeanFactory id=f54df41b-a01e-36df-8bfd-d8869984375c
+2020-07-31 21:30:33.933 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$fe13a023] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:33.938 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:34.188 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:34.196 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:34.200 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:34.202 INFO [main][SeataAutoConfiguration.java:65] - Automatically configure Seata
+2020-07-31 21:30:34.284 INFO [main][ConfigurationFactory.java:65] - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2020-07-31 21:30:34.312 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:34.317 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'configFileProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigFileProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:34.318 INFO [main][ConfigurationFactory.java:123] - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2020-07-31 21:30:34.443 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'serviceProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.ServiceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:34.446 INFO [main][GlobalTransactionScanner.java:164] - Initializing Global Transaction Clients ... 
+2020-07-31 21:30:34.464 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'threadFactoryProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.ThreadFactoryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:34.468 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transportProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.TransportProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:34.627 INFO [main][NettyClientBootstrap.java:147] - NettyClientBootstrap has started
+2020-07-31 21:30:34.627 INFO [main][GlobalTransactionScanner.java:172] - Transaction Manager Client is initialized. applicationId[asset] txServiceGroup[asset_group]
+2020-07-31 21:30:34.675 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rmProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.RmProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:34.675 INFO [main][AsyncWorker.java:125] - Async Commit Buffer Limit: 1000
+2020-07-31 21:30:34.675 INFO [main][ResourceManagerXA.java:40] - ResourceManagerXA init ...
+2020-07-31 21:30:34.708 INFO [main][NettyClientBootstrap.java:147] - NettyClientBootstrap has started
+2020-07-31 21:30:34.708 INFO [main][GlobalTransactionScanner.java:177] - Resource Manager is initialized. applicationId[asset] txServiceGroup[asset_group]
+2020-07-31 21:30:34.708 INFO [main][GlobalTransactionScanner.java:181] - Global Transaction Clients are initialized. 
+2020-07-31 21:30:34.799 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:35.260 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dataSourceConfig' of type [com.fort.webapp.config.DataSourceConfig$$EnhancerBySpringCGLIB$$65da2e74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:35.392 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'druidSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:35.463 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:35.479 INFO [main][SeataAutoDataSourceProxyCreator.java:45] - Auto proxy of [druidSource]
+2020-07-31 21:30:35.549 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:35.555 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:35.559 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionAdviceConfig' of type [com.fort.webapp.config.TransactionAdviceConfig$$EnhancerBySpringCGLIB$$4743a603] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:35.566 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:35.567 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:35.568 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:35.600 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:30:36.137 INFO [main][TomcatWebServer.java:92] - Tomcat initialized with port(s): 8094 (http)
+2020-07-31 21:30:36.151 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8094"]
+2020-07-31 21:30:36.152 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2020-07-31 21:30:36.153 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-07-31 21:30:36.348 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2020-07-31 21:30:36.348 INFO [main][ServletWebServerApplicationContext.java:284] - Root WebApplicationContext: initialization completed in 8195 ms
+2020-07-31 21:30:36.584 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-31 21:30:36.616 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1bee92f9
+2020-07-31 21:30:38.705 INFO [main][GlobalTransactionScanner.java:231] - Bean[com.fort.webapp.controller.asset.AssetController] with name [assetController] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-07-31 21:30:39.017 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-31 21:30:39.301 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-31 21:30:39.914 INFO [main][UserDetailsServiceAutoConfiguration.java:86] - 
+
+Using generated security password: c9bcbe05-0804-4774-bdb0-dc1be4733180
+
+2020-07-31 21:30:40.352 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3256cd5a, org.springframework.security.web.context.SecurityContextPersistenceFilter@62065a8c, org.springframework.security.web.header.HeaderWriterFilter@7c329d38, org.springframework.security.web.authentication.logout.LogoutFilter@6a00b08c, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@61d4bc03, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b8de87b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26b6c4de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f415a37, org.springframework.security.web.session.SessionManagementFilter@54db2ab9, org.springframework.security.web.access.ExceptionTranslationFilter@7384b234, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70f0bd97]
+2020-07-31 21:30:40.833 INFO [main][EndpointLinksResolver.java:58] - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-31 21:30:40.916 INFO [main][InstanceInfoFactory.java:72] - Setting initial instance status as: STARTING
+2020-07-31 21:30:40.979 INFO [main][DiscoveryClient.java:371] - Initializing Eureka in region us-east-1
+2020-07-31 21:30:41.048 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-07-31 21:30:41.049 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-07-31 21:30:41.240 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-07-31 21:30:41.241 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-07-31 21:30:41.666 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:30:41.772 INFO [main][DiscoveryClient.java:988] - Disable delta property : false
+2020-07-31 21:30:41.773 INFO [main][DiscoveryClient.java:989] - Single vip registry refresh property : null
+2020-07-31 21:30:41.773 INFO [main][DiscoveryClient.java:990] - Force full registry fetch : false
+2020-07-31 21:30:41.773 INFO [main][DiscoveryClient.java:991] - Application is null : false
+2020-07-31 21:30:41.774 INFO [main][DiscoveryClient.java:992] - Registered Applications size is zero : true
+2020-07-31 21:30:41.774 INFO [main][DiscoveryClient.java:994] - Application version is -1: true
+2020-07-31 21:30:41.774 INFO [main][DiscoveryClient.java:1077] - Getting all instance registry info from the eureka server
+2020-07-31 21:30:42.068 INFO [main][DiscoveryClient.java:1086] - The response status is 200
+2020-07-31 21:30:42.072 INFO [main][DiscoveryClient.java:1301] - Starting heartbeat executor: renew interval is: 30
+2020-07-31 21:30:42.077 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-31 21:30:42.083 INFO [main][DiscoveryClient.java:475] - Discovery Client initialized at timestamp 1596202242082 with initial instances count: 2
+2020-07-31 21:30:42.096 INFO [main][EurekaServiceRegistry.java:41] - Registering application ASSET with eureka with status UP
+2020-07-31 21:30:42.098 INFO [main][DiscoveryClient.java:1337] - Saw local status change event StatusChangeEvent [timestamp=1596202242098, current=UP, previous=STARTING]
+2020-07-31 21:30:42.107 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:30:42.270 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8094"]
+2020-07-31 21:30:42.302 INFO [main][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-31 21:30:42.302 INFO [main][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2020-07-31 21:30:42.323 INFO [main][FrameworkServlet.java:547] - Completed initialization in 19 ms
+2020-07-31 21:30:42.325 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 8094 (http) with context path ''
+2020-07-31 21:30:42.327 INFO [main][EurekaAutoServiceRegistration.java:145] - Updating port to 8094
+2020-07-31 21:30:42.479 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:30:42.528 INFO [main][StartupInfoLogger.java:61] - Started AssetApplication in 15.681 seconds (JVM running for 17.175)
+2020-07-31 21:30:42.691 INFO [DiscoveryClient-InstanceInfoReplicator-0][DruidDataSource.java:983] - {dataSource-1} inited
+2020-07-31 21:30:43.173 INFO [DiscoveryClient-InstanceInfoReplicator-0][EurekaConfigBasedInstanceInfoProvider.java:107] - Setting initial instance status as: STARTING
+2020-07-31 21:30:43.189 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:371] - Initializing Eureka in region us-east-1
+2020-07-31 21:30:43.189 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-07-31 21:30:43.189 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-07-31 21:30:43.189 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-07-31 21:30:43.189 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-07-31 21:30:43.320 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:30:43.320 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:988] - Disable delta property : false
+2020-07-31 21:30:43.320 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:989] - Single vip registry refresh property : null
+2020-07-31 21:30:43.320 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:990] - Force full registry fetch : false
+2020-07-31 21:30:43.320 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:991] - Application is null : false
+2020-07-31 21:30:43.320 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:992] - Registered Applications size is zero : true
+2020-07-31 21:30:43.320 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:994] - Application version is -1: true
+2020-07-31 21:30:43.320 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:1077] - Getting all instance registry info from the eureka server
+2020-07-31 21:30:43.467 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:1086] - The response status is 200
+2020-07-31 21:30:43.467 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:1349] - Not registering with Eureka server per configuration
+2020-07-31 21:30:43.467 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:475] - Discovery Client initialized at timestamp 1596202243467 with initial instances count: 2
+2020-07-31 21:30:43.467 INFO [DiscoveryClient-InstanceInfoReplicator-0][NettyClientChannelManager.java:99] - will connect to 192.168.56.1:8799
+2020-07-31 21:30:43.467 INFO [DiscoveryClient-InstanceInfoReplicator-0][RmNettyRemotingClient.java:244] - RM will register :jdbc:mysql://localhost:3306/fort
+2020-07-31 21:30:43.483 INFO [DiscoveryClient-InstanceInfoReplicator-0][NettyPoolableFactory.java:56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.56.1:8799,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/fort', applicationId='asset', transactionServiceGroup='asset_group'} >
+2020-07-31 21:30:43.961 INFO [DiscoveryClient-InstanceInfoReplicator-0][RmNettyRemotingClient.java:151] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x712cd033, L:/192.168.56.1:52814 - R:/192.168.56.1:8799]
+2020-07-31 21:30:43.979 INFO [DiscoveryClient-InstanceInfoReplicator-0][NettyPoolableFactory.java:81] - register success, cost 137 ms, version:1.3.0,role:RMROLE,channel:[id: 0x712cd033, L:/192.168.56.1:52814 - R:/192.168.56.1:8799]
+2020-07-31 21:30:44.045 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:854] - DiscoveryClient_ASSET/lucky-PC:asset:8094: registering service...
+2020-07-31 21:30:44.091 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:863] - DiscoveryClient_ASSET/lucky-PC:asset:8094 - registration status: 204
+2020-07-31 21:31:40.884 INFO [timeoutChecker_1_1][NettyClientChannelManager.java:99] - will connect to 192.168.56.1:8799
+2020-07-31 21:31:40.885 INFO [timeoutChecker_1_1][NettyPoolableFactory.java:56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.56.1:8799,msg:< RegisterTMRequest{applicationId='asset', transactionServiceGroup='asset_group'} >
+2020-07-31 21:31:40.906 INFO [timeoutChecker_1_1][TmNettyRemotingClient.java:138] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0xe902f5b1, L:/192.168.56.1:52872 - R:/192.168.56.1:8799]
+2020-07-31 21:31:40.906 INFO [timeoutChecker_1_1][NettyPoolableFactory.java:81] - register success, cost 16 ms, version:1.3.0,role:TMROLE,channel:[id: 0xe902f5b1, L:/192.168.56.1:52872 - R:/192.168.56.1:8799]
+2020-07-31 21:33:49.674 INFO [http-nio-8094-exec-6][TransactionManagerHolder.java:40] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@4927bd6b
+2020-07-31 21:33:49.695 INFO [http-nio-8094-exec-6][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32578122549301248]
+2020-07-31 21:33:49.695 INFO [http-nio-8094-exec-6][AssetController.java:45] - My xid as : 192.168.56.1:8799:32578122549301248
+2020-07-31 21:33:50.061 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578122549301248
+2020-07-31 21:33:50.543 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578122549301248
+2020-07-31 21:33:51.094 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578122549301248
+2020-07-31 21:33:51.452 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578122549301248
+2020-07-31 21:33:51.605 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578122549301248
+2020-07-31 21:33:51.834 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578122549301248
+2020-07-31 21:33:52.350 INFO [rpcDispatch_RMROLE_1_1_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32578122549301248,branchId=32578133030866944,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:33:52.352 INFO [rpcDispatch_RMROLE_1_1_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32578122549301248 32578133030866944 jdbc:mysql://localhost:3306/fort
+2020-07-31 21:33:52.415 INFO [rpcDispatch_RMROLE_1_1_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:33:52.418 INFO [rpcDispatch_RMROLE_1_1_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:33:52.605 INFO [rpcDispatch_RMROLE_1_1_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32578122549301248 branch 32578133030866944, undo_log deleted with GlobalFinished
+2020-07-31 21:33:52.607 INFO [rpcDispatch_RMROLE_1_1_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 21:33:53.664 INFO [http-nio-8094-exec-6][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32578122549301248] rollback status: Rollbacked
+2020-07-31 21:36:05.841 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:36:07.442 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:36:08.273 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:36:08.573 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:36:45.127 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$f0694875] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:46.062 INFO [main][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:36:46.294 INFO [main][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:36:46.295 INFO [main][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/config/asset-dev.yml'}]
+2020-07-31 21:36:46.303 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2020-07-31 21:36:51.371 INFO [main][GenericScope.java:295] - BeanFactory id=f54df41b-a01e-36df-8bfd-d8869984375c
+2020-07-31 21:36:51.648 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$c45faeac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:51.648 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:51.792 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:51.808 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:51.813 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:51.816 INFO [main][SeataAutoConfiguration.java:65] - Automatically configure Seata
+2020-07-31 21:36:51.900 INFO [main][ConfigurationFactory.java:65] - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2020-07-31 21:36:51.914 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:51.920 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'configFileProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigFileProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:51.921 INFO [main][ConfigurationFactory.java:123] - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2020-07-31 21:36:52.034 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'serviceProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.ServiceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:52.034 INFO [main][GlobalTransactionScanner.java:164] - Initializing Global Transaction Clients ... 
+2020-07-31 21:36:52.090 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'threadFactoryProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.ThreadFactoryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:52.100 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transportProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.TransportProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:52.253 INFO [main][NettyClientBootstrap.java:147] - NettyClientBootstrap has started
+2020-07-31 21:36:52.253 INFO [main][GlobalTransactionScanner.java:172] - Transaction Manager Client is initialized. applicationId[asset] txServiceGroup[asset_group]
+2020-07-31 21:36:52.307 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rmProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.RmProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:52.307 INFO [main][AsyncWorker.java:125] - Async Commit Buffer Limit: 1000
+2020-07-31 21:36:52.307 INFO [main][ResourceManagerXA.java:40] - ResourceManagerXA init ...
+2020-07-31 21:36:52.323 INFO [main][NettyClientBootstrap.java:147] - NettyClientBootstrap has started
+2020-07-31 21:36:52.323 INFO [main][GlobalTransactionScanner.java:177] - Resource Manager is initialized. applicationId[asset] txServiceGroup[asset_group]
+2020-07-31 21:36:52.323 INFO [main][GlobalTransactionScanner.java:181] - Global Transaction Clients are initialized. 
+2020-07-31 21:36:52.414 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:52.882 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dataSourceConfig' of type [com.fort.webapp.config.DataSourceConfig$$EnhancerBySpringCGLIB$$2c263cfd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:53.065 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'druidSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:53.133 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:53.158 INFO [main][SeataAutoDataSourceProxyCreator.java:45] - Auto proxy of [druidSource]
+2020-07-31 21:36:53.252 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:53.259 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:53.263 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionAdviceConfig' of type [com.fort.webapp.config.TransactionAdviceConfig$$EnhancerBySpringCGLIB$$d8fb48c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:53.269 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:53.270 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:53.271 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:53.291 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:36:53.905 INFO [main][TomcatWebServer.java:92] - Tomcat initialized with port(s): 8094 (http)
+2020-07-31 21:36:54.001 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8094"]
+2020-07-31 21:36:54.003 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2020-07-31 21:36:54.005 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-07-31 21:36:54.179 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2020-07-31 21:36:54.179 INFO [main][ServletWebServerApplicationContext.java:284] - Root WebApplicationContext: initialization completed in 7854 ms
+2020-07-31 21:36:54.390 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-31 21:36:54.410 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@55bcd722
+2020-07-31 21:36:56.470 INFO [main][GlobalTransactionScanner.java:231] - Bean[com.fort.webapp.controller.asset.AssetController] with name [assetController] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-07-31 21:36:56.683 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-31 21:36:56.988 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-31 21:36:57.742 INFO [main][UserDetailsServiceAutoConfiguration.java:86] - 
+
+Using generated security password: 91e3ef15-9f23-4aa2-9b34-aa5215f8ac74
+
+2020-07-31 21:36:58.115 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5fe14f1b, org.springframework.security.web.context.SecurityContextPersistenceFilter@30e6c577, org.springframework.security.web.header.HeaderWriterFilter@7f0bd5ed, org.springframework.security.web.authentication.logout.LogoutFilter@35c7c803, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@4cf52777, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20f7197f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b8de87b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ca57834, org.springframework.security.web.session.SessionManagementFilter@2a718598, org.springframework.security.web.access.ExceptionTranslationFilter@30f94b64, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22f1d27e]
+2020-07-31 21:36:58.578 INFO [main][EndpointLinksResolver.java:58] - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-31 21:36:58.696 INFO [main][InstanceInfoFactory.java:72] - Setting initial instance status as: STARTING
+2020-07-31 21:36:58.758 INFO [main][DiscoveryClient.java:371] - Initializing Eureka in region us-east-1
+2020-07-31 21:36:58.822 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-07-31 21:36:58.822 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-07-31 21:36:59.039 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-07-31 21:36:59.039 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-07-31 21:36:59.509 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:36:59.633 INFO [main][DiscoveryClient.java:988] - Disable delta property : false
+2020-07-31 21:36:59.634 INFO [main][DiscoveryClient.java:989] - Single vip registry refresh property : null
+2020-07-31 21:36:59.634 INFO [main][DiscoveryClient.java:990] - Force full registry fetch : false
+2020-07-31 21:36:59.634 INFO [main][DiscoveryClient.java:991] - Application is null : false
+2020-07-31 21:36:59.635 INFO [main][DiscoveryClient.java:992] - Registered Applications size is zero : true
+2020-07-31 21:36:59.635 INFO [main][DiscoveryClient.java:994] - Application version is -1: true
+2020-07-31 21:36:59.635 INFO [main][DiscoveryClient.java:1077] - Getting all instance registry info from the eureka server
+2020-07-31 21:36:59.932 INFO [main][DiscoveryClient.java:1086] - The response status is 200
+2020-07-31 21:36:59.932 INFO [main][DiscoveryClient.java:1301] - Starting heartbeat executor: renew interval is: 30
+2020-07-31 21:36:59.953 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-31 21:36:59.957 INFO [main][DiscoveryClient.java:475] - Discovery Client initialized at timestamp 1596202619957 with initial instances count: 7
+2020-07-31 21:36:59.972 INFO [main][EurekaServiceRegistry.java:41] - Registering application ASSET with eureka with status UP
+2020-07-31 21:36:59.972 INFO [main][DiscoveryClient.java:1337] - Saw local status change event StatusChangeEvent [timestamp=1596202619972, current=UP, previous=STARTING]
+2020-07-31 21:36:59.988 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:37:00.184 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8094"]
+2020-07-31 21:37:00.215 INFO [main][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-31 21:37:00.215 INFO [main][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2020-07-31 21:37:00.236 INFO [main][FrameworkServlet.java:547] - Completed initialization in 21 ms
+2020-07-31 21:37:00.239 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 8094 (http) with context path ''
+2020-07-31 21:37:00.240 INFO [main][EurekaAutoServiceRegistration.java:145] - Updating port to 8094
+2020-07-31 21:37:00.379 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:37:00.392 INFO [main][StartupInfoLogger.java:61] - Started AssetApplication in 15.114 seconds (JVM running for 16.676)
+2020-07-31 21:37:00.555 INFO [DiscoveryClient-InstanceInfoReplicator-0][DruidDataSource.java:983] - {dataSource-1} inited
+2020-07-31 21:37:01.098 INFO [DiscoveryClient-InstanceInfoReplicator-0][EurekaConfigBasedInstanceInfoProvider.java:107] - Setting initial instance status as: STARTING
+2020-07-31 21:37:01.108 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:371] - Initializing Eureka in region us-east-1
+2020-07-31 21:37:01.116 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-07-31 21:37:01.116 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-07-31 21:37:01.116 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-07-31 21:37:01.117 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-07-31 21:37:01.274 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:37:01.278 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:988] - Disable delta property : false
+2020-07-31 21:37:01.279 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:989] - Single vip registry refresh property : null
+2020-07-31 21:37:01.279 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:990] - Force full registry fetch : false
+2020-07-31 21:37:01.279 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:991] - Application is null : false
+2020-07-31 21:37:01.279 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:992] - Registered Applications size is zero : true
+2020-07-31 21:37:01.280 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:994] - Application version is -1: true
+2020-07-31 21:37:01.280 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:1077] - Getting all instance registry info from the eureka server
+2020-07-31 21:37:01.451 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:1086] - The response status is 200
+2020-07-31 21:37:01.451 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:1349] - Not registering with Eureka server per configuration
+2020-07-31 21:37:01.451 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:475] - Discovery Client initialized at timestamp 1596202621451 with initial instances count: 7
+2020-07-31 21:37:01.451 INFO [DiscoveryClient-InstanceInfoReplicator-0][NettyClientChannelManager.java:99] - will connect to 192.168.56.1:8799
+2020-07-31 21:37:01.466 INFO [DiscoveryClient-InstanceInfoReplicator-0][RmNettyRemotingClient.java:244] - RM will register :jdbc:mysql://localhost:3306/fort
+2020-07-31 21:37:01.466 INFO [DiscoveryClient-InstanceInfoReplicator-0][NettyPoolableFactory.java:56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.56.1:8799,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/fort', applicationId='asset', transactionServiceGroup='asset_group'} >
+2020-07-31 21:37:02.488 INFO [DiscoveryClient-InstanceInfoReplicator-0][RmNettyRemotingClient.java:151] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x3afff7c1, L:/192.168.56.1:53318 - R:/192.168.56.1:8799]
+2020-07-31 21:37:02.510 INFO [DiscoveryClient-InstanceInfoReplicator-0][NettyPoolableFactory.java:81] - register success, cost 228 ms, version:1.3.0,role:RMROLE,channel:[id: 0x3afff7c1, L:/192.168.56.1:53318 - R:/192.168.56.1:8799]
+2020-07-31 21:37:02.922 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:854] - DiscoveryClient_ASSET/lucky-PC:asset:8094: registering service...
+2020-07-31 21:37:03.016 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:863] - DiscoveryClient_ASSET/lucky-PC:asset:8094 - registration status: 204
+2020-07-31 21:37:17.091 INFO [http-nio-8094-exec-3][TransactionManagerHolder.java:40] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@3f5d8b2d
+2020-07-31 21:37:17.102 INFO [rpcMergeMessageSend_TMROLE_1_1][NettyClientChannelManager.java:99] - will connect to 192.168.56.1:8799
+2020-07-31 21:37:17.103 INFO [rpcMergeMessageSend_TMROLE_1_1][NettyPoolableFactory.java:56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.56.1:8799,msg:< RegisterTMRequest{applicationId='asset', transactionServiceGroup='asset_group'} >
+2020-07-31 21:37:17.135 INFO [rpcMergeMessageSend_TMROLE_1_1][TmNettyRemotingClient.java:138] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0xf10fa76b, L:/192.168.56.1:53355 - R:/192.168.56.1:8799]
+2020-07-31 21:37:17.135 INFO [rpcMergeMessageSend_TMROLE_1_1][NettyPoolableFactory.java:81] - register success, cost 25 ms, version:1.3.0,role:TMROLE,channel:[id: 0xf10fa76b, L:/192.168.56.1:53355 - R:/192.168.56.1:8799]
+2020-07-31 21:37:17.169 INFO [http-nio-8094-exec-3][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32578992749940736]
+2020-07-31 21:37:17.170 INFO [http-nio-8094-exec-3][AssetController.java:45] - My xid as : 192.168.56.1:8799:32578992749940736
+2020-07-31 21:37:17.730 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578992749940736
+2020-07-31 21:37:20.467 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578992749940736
+2020-07-31 21:37:20.857 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578992749940736
+2020-07-31 21:37:21.089 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578992749940736
+2020-07-31 21:37:21.368 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32578992749940736
+2020-07-31 21:37:21.746 INFO [http-nio-8094-exec-3][DefaultGlobalTransaction.java:143] - [192.168.56.1:8799:32578992749940736] commit status: Committed
+2020-07-31 21:37:22.428 INFO [rpcDispatch_RMROLE_1_1_16][RmBranchCommitProcessor.java:56] - rm client handle branch commit process:xid=192.168.56.1:8799:32578992749940736,branchId=32579011515256832,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:37:22.429 INFO [rpcDispatch_RMROLE_1_1_16][AbstractRMHandler.java:96] - Branch committing: 192.168.56.1:8799:32578992749940736 32579011515256832 jdbc:mysql://localhost:3306/fort null
+2020-07-31 21:37:22.430 INFO [rpcDispatch_RMROLE_1_1_16][AbstractRMHandler.java:104] - Branch commit result: PhaseTwo_Committed
+2020-07-31 21:37:54.462 INFO [http-nio-8094-exec-6][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32579149193285632]
+2020-07-31 21:37:54.463 INFO [http-nio-8094-exec-6][AssetController.java:45] - My xid as : 192.168.56.1:8799:32579149193285632
+2020-07-31 21:37:54.487 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579149193285632
+2020-07-31 21:37:54.635 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579149193285632
+2020-07-31 21:37:54.816 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579149193285632
+2020-07-31 21:37:55.158 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579149193285632
+2020-07-31 21:37:55.311 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579149193285632
+2020-07-31 21:37:55.494 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579149193285632
+2020-07-31 21:37:55.814 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579149193285632
+2020-07-31 21:37:55.952 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579149193285632
+2020-07-31 21:37:56.320 INFO [rpcDispatch_RMROLE_1_2_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32579149193285632,branchId=32579156340379648,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:37:56.322 INFO [rpcDispatch_RMROLE_1_2_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32579149193285632 32579156340379648 jdbc:mysql://localhost:3306/fort
+2020-07-31 21:37:56.447 INFO [rpcDispatch_RMROLE_1_2_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32579149193285632 branch 32579156340379648, undo_log deleted with GlobalFinished
+2020-07-31 21:37:56.448 INFO [rpcDispatch_RMROLE_1_2_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 21:37:57.059 INFO [http-nio-8094-exec-6][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32579149193285632] rollback status: Rollbacked
+2020-07-31 21:38:13.237 INFO [http-nio-8094-exec-9][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32579227945537536]
+2020-07-31 21:38:13.238 INFO [http-nio-8094-exec-9][AssetController.java:45] - My xid as : 192.168.56.1:8799:32579227945537536
+2020-07-31 21:38:13.253 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579227945537536
+2020-07-31 21:38:13.390 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579227945537536
+2020-07-31 21:38:13.542 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579227945537536
+2020-07-31 21:38:13.718 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579227945537536
+2020-07-31 21:38:13.858 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579227945537536
+2020-07-31 21:38:14.325 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579227945537536
+2020-07-31 21:38:14.500 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579227945537536
+2020-07-31 21:38:14.620 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579227945537536
+2020-07-31 21:38:14.811 INFO [http-nio-8094-exec-9][DefaultGlobalTransaction.java:143] - [192.168.56.1:8799:32579227945537536] commit status: Committed
+2020-07-31 21:38:15.228 INFO [rpcDispatch_RMROLE_1_3_16][RmBranchCommitProcessor.java:56] - rm client handle branch commit process:xid=192.168.56.1:8799:32579227945537536,branchId=32579234224410624,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:38:15.228 INFO [rpcDispatch_RMROLE_1_3_16][AbstractRMHandler.java:96] - Branch committing: 192.168.56.1:8799:32579227945537536 32579234224410624 jdbc:mysql://localhost:3306/fort null
+2020-07-31 21:38:15.228 INFO [rpcDispatch_RMROLE_1_3_16][AbstractRMHandler.java:104] - Branch commit result: PhaseTwo_Committed
+2020-07-31 21:38:44.589 INFO [http-nio-8094-exec-3][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32579359441162240]
+2020-07-31 21:38:44.589 INFO [http-nio-8094-exec-3][AssetController.java:45] - My xid as : 192.168.56.1:8799:32579359441162240
+2020-07-31 21:38:44.825 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579359441162240
+2020-07-31 21:38:45.258 INFO [http-nio-8094-exec-3][DefaultGlobalTransaction.java:143] - [192.168.56.1:8799:32579359441162240] commit status: Committed
+2020-07-31 21:38:46.155 INFO [rpcDispatch_RMROLE_1_4_16][RmBranchCommitProcessor.java:56] - rm client handle branch commit process:xid=192.168.56.1:8799:32579359441162240,branchId=32579361546702848,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:38:46.156 INFO [rpcDispatch_RMROLE_1_4_16][AbstractRMHandler.java:96] - Branch committing: 192.168.56.1:8799:32579359441162240 32579361546702848 jdbc:mysql://localhost:3306/fort null
+2020-07-31 21:38:46.156 INFO [rpcDispatch_RMROLE_1_4_16][AbstractRMHandler.java:104] - Branch commit result: PhaseTwo_Committed
+2020-07-31 21:39:08.548 INFO [http-nio-8094-exec-9][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32579459936686080]
+2020-07-31 21:39:08.548 INFO [http-nio-8094-exec-9][AssetController.java:45] - My xid as : 192.168.56.1:8799:32579459936686080
+2020-07-31 21:39:08.571 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579459936686080
+2020-07-31 21:39:08.665 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579459936686080
+2020-07-31 21:39:08.841 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579459936686080
+2020-07-31 21:39:09.361 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579459936686080
+2020-07-31 21:39:09.560 INFO [http-nio-8094-exec-9][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579459936686080
+2020-07-31 21:39:09.808 INFO [http-nio-8094-exec-9][DefaultGlobalTransaction.java:143] - [192.168.56.1:8799:32579459936686080] commit status: Committed
+2020-07-31 21:39:10.603 INFO [rpcDispatch_RMROLE_1_5_16][RmBranchCommitProcessor.java:56] - rm client handle branch commit process:xid=192.168.56.1:8799:32579459936686080,branchId=32579464961462272,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:39:10.603 INFO [rpcDispatch_RMROLE_1_5_16][AbstractRMHandler.java:96] - Branch committing: 192.168.56.1:8799:32579459936686080 32579464961462272 jdbc:mysql://localhost:3306/fort null
+2020-07-31 21:39:10.603 INFO [rpcDispatch_RMROLE_1_5_16][AbstractRMHandler.java:104] - Branch commit result: PhaseTwo_Committed
+2020-07-31 21:39:19.759 INFO [http-nio-8094-exec-3][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32579506963222528]
+2020-07-31 21:39:19.760 INFO [http-nio-8094-exec-3][AssetController.java:45] - My xid as : 192.168.56.1:8799:32579506963222528
+2020-07-31 21:39:19.802 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579506963222528
+2020-07-31 21:39:19.909 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579506963222528
+2020-07-31 21:39:20.209 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579506963222528
+2020-07-31 21:39:20.449 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579506963222528
+2020-07-31 21:39:20.732 INFO [http-nio-8094-exec-3][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32579506963222528
+2020-07-31 21:39:21.241 INFO [rpcDispatch_RMROLE_1_6_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32579506963222528,branchId=32579512042524672,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:39:21.241 INFO [rpcDispatch_RMROLE_1_6_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32579506963222528 32579512042524672 jdbc:mysql://localhost:3306/fort
+2020-07-31 21:39:21.248 INFO [rpcDispatch_RMROLE_1_6_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:39:21.249 INFO [rpcDispatch_RMROLE_1_6_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:39:21.249 INFO [rpcDispatch_RMROLE_1_6_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:39:21.320 INFO [rpcDispatch_RMROLE_1_6_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32579506963222528 branch 32579512042524672, undo_log deleted with GlobalFinished
+2020-07-31 21:39:21.321 INFO [rpcDispatch_RMROLE_1_6_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 21:39:21.648 INFO [http-nio-8094-exec-3][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32579506963222528] rollback status: Rollbacked
+2020-07-31 21:51:35.150 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$d30e40ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:36.132 INFO [main][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:51:36.401 INFO [main][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:51:36.401 INFO [main][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/config/asset-dev.yml'}]
+2020-07-31 21:51:36.401 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2020-07-31 21:51:41.291 INFO [main][GenericScope.java:295] - BeanFactory id=7451bc0d-5a69-3a49-9858-8d8a26846143
+2020-07-31 21:51:41.586 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$a704a726] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:41.596 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:41.730 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:41.762 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:41.770 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:41.774 INFO [main][SeataAutoConfiguration.java:65] - Automatically configure Seata
+2020-07-31 21:51:41.950 INFO [main][ConfigurationFactory.java:65] - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2020-07-31 21:51:41.963 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:41.970 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'configFileProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigFileProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:41.971 INFO [main][ConfigurationFactory.java:123] - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2020-07-31 21:51:42.087 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'serviceProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.ServiceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.090 INFO [main][GlobalTransactionScanner.java:164] - Initializing Global Transaction Clients ... 
+2020-07-31 21:51:42.111 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'threadFactoryProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.ThreadFactoryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.119 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transportProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.TransportProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.249 INFO [main][NettyClientBootstrap.java:147] - NettyClientBootstrap has started
+2020-07-31 21:51:42.249 INFO [main][GlobalTransactionScanner.java:172] - Transaction Manager Client is initialized. applicationId[asset] txServiceGroup[asset_group]
+2020-07-31 21:51:42.272 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rmProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.RmProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.272 INFO [main][AsyncWorker.java:125] - Async Commit Buffer Limit: 1000
+2020-07-31 21:51:42.273 INFO [main][ResourceManagerXA.java:40] - ResourceManagerXA init ...
+2020-07-31 21:51:42.288 INFO [main][NettyClientBootstrap.java:147] - NettyClientBootstrap has started
+2020-07-31 21:51:42.289 INFO [main][GlobalTransactionScanner.java:177] - Resource Manager is initialized. applicationId[asset] txServiceGroup[asset_group]
+2020-07-31 21:51:42.289 INFO [main][GlobalTransactionScanner.java:181] - Global Transaction Clients are initialized. 
+2020-07-31 21:51:42.372 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.774 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dataSourceConfig' of type [com.fort.webapp.config.DataSourceConfig$$EnhancerBySpringCGLIB$$ecb3577] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.839 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dataSource' of type [org.apache.commons.dbcp2.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.866 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.874 INFO [main][SeataAutoDataSourceProxyCreator.java:45] - Auto proxy of [dataSource]
+2020-07-31 21:51:42.922 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.931 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.936 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionAdviceConfig' of type [com.fort.webapp.config.TransactionAdviceConfig$$EnhancerBySpringCGLIB$$f034ad06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.944 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.945 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.945 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:42.992 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:51:43.569 INFO [main][TomcatWebServer.java:92] - Tomcat initialized with port(s): 8094 (http)
+2020-07-31 21:51:43.582 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8094"]
+2020-07-31 21:51:43.583 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2020-07-31 21:51:43.583 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-07-31 21:51:43.774 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2020-07-31 21:51:43.774 INFO [main][ServletWebServerApplicationContext.java:284] - Root WebApplicationContext: initialization completed in 7325 ms
+2020-07-31 21:51:43.950 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-31 21:51:43.972 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@62c9625e
+2020-07-31 21:51:44.731 INFO [main][EurekaConfigBasedInstanceInfoProvider.java:107] - Setting initial instance status as: STARTING
+2020-07-31 21:51:44.833 INFO [main][DiscoveryClient.java:371] - Initializing Eureka in region us-east-1
+2020-07-31 21:51:45.531 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-07-31 21:51:45.532 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-07-31 21:51:45.723 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-07-31 21:51:45.723 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-07-31 21:51:46.195 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:51:46.282 INFO [main][DiscoveryClient.java:988] - Disable delta property : false
+2020-07-31 21:51:46.282 INFO [main][DiscoveryClient.java:989] - Single vip registry refresh property : null
+2020-07-31 21:51:46.282 INFO [main][DiscoveryClient.java:990] - Force full registry fetch : false
+2020-07-31 21:51:46.298 INFO [main][DiscoveryClient.java:991] - Application is null : false
+2020-07-31 21:51:46.298 INFO [main][DiscoveryClient.java:992] - Registered Applications size is zero : true
+2020-07-31 21:51:46.299 INFO [main][DiscoveryClient.java:994] - Application version is -1: true
+2020-07-31 21:51:46.299 INFO [main][DiscoveryClient.java:1077] - Getting all instance registry info from the eureka server
+2020-07-31 21:51:46.569 INFO [main][DiscoveryClient.java:1086] - The response status is 200
+2020-07-31 21:51:46.569 INFO [main][DiscoveryClient.java:1349] - Not registering with Eureka server per configuration
+2020-07-31 21:51:46.584 INFO [main][DiscoveryClient.java:475] - Discovery Client initialized at timestamp 1596203506584 with initial instances count: 5
+2020-07-31 21:51:46.584 INFO [main][NettyClientChannelManager.java:99] - will connect to 192.168.56.1:8799
+2020-07-31 21:51:46.584 INFO [main][RmNettyRemotingClient.java:244] - RM will register :jdbc:mysql://localhost:3306/fort
+2020-07-31 21:51:46.584 INFO [main][NettyPoolableFactory.java:56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.56.1:8799,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/fort', applicationId='asset', transactionServiceGroup='asset_group'} >
+2020-07-31 21:51:46.916 INFO [main][RmNettyRemotingClient.java:151] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x6f85d4c8, L:/192.168.56.1:54713 - R:/192.168.56.1:8799]
+2020-07-31 21:51:46.927 INFO [main][NettyPoolableFactory.java:81] - register success, cost 106 ms, version:1.3.0,role:RMROLE,channel:[id: 0x6f85d4c8, L:/192.168.56.1:54713 - R:/192.168.56.1:8799]
+2020-07-31 21:51:48.438 INFO [main][GlobalTransactionScanner.java:231] - Bean[com.fort.webapp.controller.asset.AssetController] with name [assetController] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-07-31 21:51:48.577 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-31 21:51:48.896 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-31 21:51:49.457 INFO [main][UserDetailsServiceAutoConfiguration.java:86] - 
+
+Using generated security password: 96132bb9-5940-484f-a9ae-bf8b0c6033a1
+
+2020-07-31 21:51:49.866 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f4e8af1, org.springframework.security.web.context.SecurityContextPersistenceFilter@4da1d61b, org.springframework.security.web.header.HeaderWriterFilter@7e14c05, org.springframework.security.web.authentication.logout.LogoutFilter@11f4c488, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@26cee3d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79eaf64, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6db96289, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@89f4d09, org.springframework.security.web.session.SessionManagementFilter@69117714, org.springframework.security.web.access.ExceptionTranslationFilter@2296c3d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15e281ee]
+2020-07-31 21:51:50.323 INFO [main][EndpointLinksResolver.java:58] - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-31 21:51:50.402 INFO [main][InstanceInfoFactory.java:72] - Setting initial instance status as: STARTING
+2020-07-31 21:51:50.407 INFO [main][DiscoveryClient.java:371] - Initializing Eureka in region us-east-1
+2020-07-31 21:51:50.410 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-07-31 21:51:50.410 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-07-31 21:51:50.410 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-07-31 21:51:50.410 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-07-31 21:51:50.534 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:51:50.534 INFO [main][DiscoveryClient.java:988] - Disable delta property : false
+2020-07-31 21:51:50.534 INFO [main][DiscoveryClient.java:989] - Single vip registry refresh property : null
+2020-07-31 21:51:50.534 INFO [main][DiscoveryClient.java:990] - Force full registry fetch : false
+2020-07-31 21:51:50.534 INFO [main][DiscoveryClient.java:991] - Application is null : false
+2020-07-31 21:51:50.534 INFO [main][DiscoveryClient.java:992] - Registered Applications size is zero : true
+2020-07-31 21:51:50.534 INFO [main][DiscoveryClient.java:994] - Application version is -1: true
+2020-07-31 21:51:50.534 INFO [main][DiscoveryClient.java:1077] - Getting all instance registry info from the eureka server
+2020-07-31 21:51:50.689 INFO [main][DiscoveryClient.java:1086] - The response status is 200
+2020-07-31 21:51:50.689 INFO [main][DiscoveryClient.java:1301] - Starting heartbeat executor: renew interval is: 30
+2020-07-31 21:51:50.705 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-31 21:51:50.705 INFO [main][DiscoveryClient.java:475] - Discovery Client initialized at timestamp 1596203510705 with initial instances count: 5
+2020-07-31 21:51:50.705 INFO [main][EurekaServiceRegistry.java:41] - Registering application ASSET with eureka with status UP
+2020-07-31 21:51:50.705 INFO [main][DiscoveryClient.java:1337] - Saw local status change event StatusChangeEvent [timestamp=1596203510705, current=UP, previous=STARTING]
+2020-07-31 21:51:50.720 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:51:50.857 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8094"]
+2020-07-31 21:51:50.886 INFO [main][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-31 21:51:50.886 INFO [main][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2020-07-31 21:51:50.903 INFO [main][FrameworkServlet.java:547] - Completed initialization in 17 ms
+2020-07-31 21:51:50.905 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 8094 (http) with context path ''
+2020-07-31 21:51:50.906 INFO [main][EurekaAutoServiceRegistration.java:145] - Updating port to 8094
+2020-07-31 21:51:51.000 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:51:51.013 INFO [main][StartupInfoLogger.java:61] - Started AssetApplication in 15.951 seconds (JVM running for 17.058)
+2020-07-31 21:51:51.092 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:854] - DiscoveryClient_ASSET/lucky-PC:asset:8094: registering service...
+2020-07-31 21:51:51.138 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:863] - DiscoveryClient_ASSET/lucky-PC:asset:8094 - registration status: 204
+2020-07-31 21:52:46.017 INFO [timeoutChecker_1_1][NettyClientChannelManager.java:99] - will connect to 192.168.56.1:8799
+2020-07-31 21:52:46.017 INFO [timeoutChecker_1_1][NettyPoolableFactory.java:56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.56.1:8799,msg:< RegisterTMRequest{applicationId='asset', transactionServiceGroup='asset_group'} >
+2020-07-31 21:52:46.027 INFO [timeoutChecker_1_1][TmNettyRemotingClient.java:138] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0xb9aeb18d, L:/192.168.56.1:54785 - R:/192.168.56.1:8799]
+2020-07-31 21:52:46.028 INFO [timeoutChecker_1_1][NettyPoolableFactory.java:81] - register success, cost 7 ms, version:1.3.0,role:TMROLE,channel:[id: 0xb9aeb18d, L:/192.168.56.1:54785 - R:/192.168.56.1:8799]
+2020-07-31 21:53:05.717 INFO [http-nio-8094-exec-4][TransactionManagerHolder.java:40] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@299302cc
+2020-07-31 21:53:05.731 INFO [http-nio-8094-exec-4][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32582971324108800]
+2020-07-31 21:53:05.732 INFO [http-nio-8094-exec-4][AssetController.java:45] - My xid as : 192.168.56.1:8799:32582971324108800
+2020-07-31 21:53:05.964 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32582971324108800
+2020-07-31 21:53:06.317 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32582971324108800
+2020-07-31 21:53:06.592 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32582971324108800
+2020-07-31 21:53:06.705 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32582971324108800
+2020-07-31 21:53:06.855 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32582971324108800
+2020-07-31 21:53:07.003 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32582971324108800
+2020-07-31 21:53:07.071 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32582971324108800
+2020-07-31 21:53:07.142 INFO [http-nio-8094-exec-4][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32582971324108800
+2020-07-31 21:53:07.308 INFO [rpcDispatch_RMROLE_1_1_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32582971324108800,branchId=32582977552650240,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:53:07.309 INFO [rpcDispatch_RMROLE_1_1_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32582971324108800 32582977552650240 jdbc:mysql://localhost:3306/fort
+2020-07-31 21:53:07.401 INFO [rpcDispatch_RMROLE_1_1_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32582971324108800 branch 32582977552650240, undo_log deleted with GlobalFinished
+2020-07-31 21:53:07.403 INFO [rpcDispatch_RMROLE_1_1_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 21:53:07.587 INFO [http-nio-8094-exec-4][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32582971324108800] rollback status: Rollbacked
+2020-07-31 21:54:22.569 INFO [http-nio-8094-exec-10][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32583293622816768]
+2020-07-31 21:54:22.570 INFO [http-nio-8094-exec-10][AssetController.java:45] - My xid as : 192.168.56.1:8799:32583293622816768
+2020-07-31 21:54:22.588 INFO [http-nio-8094-exec-10][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32583293622816768
+2020-07-31 21:54:22.768 INFO [http-nio-8094-exec-10][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32583293622816768
+2020-07-31 21:54:22.908 INFO [http-nio-8094-exec-10][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32583293622816768
+2020-07-31 21:54:23.007 INFO [http-nio-8094-exec-10][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32583293622816768
+2020-07-31 21:54:23.119 INFO [http-nio-8094-exec-10][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32583293622816768
+2020-07-31 21:54:23.231 INFO [rpcDispatch_RMROLE_1_2_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32583293622816768,branchId=32583296273616896,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:54:23.231 INFO [rpcDispatch_RMROLE_1_2_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32583293622816768 32583296273616896 jdbc:mysql://localhost:3306/fort
+2020-07-31 21:54:23.235 INFO [rpcDispatch_RMROLE_1_2_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:54:23.235 INFO [rpcDispatch_RMROLE_1_2_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:54:23.236 INFO [rpcDispatch_RMROLE_1_2_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:54:23.265 INFO [rpcDispatch_RMROLE_1_2_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32583293622816768 branch 32583296273616896, undo_log deleted with GlobalFinished
+2020-07-31 21:54:23.265 INFO [rpcDispatch_RMROLE_1_2_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 21:54:23.398 INFO [http-nio-8094-exec-10][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32583293622816768] rollback status: Rollbacked
+2020-07-31 21:56:02.046 INFO [http-nio-8094-exec-1][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32583710855401472]
+2020-07-31 21:56:02.046 INFO [http-nio-8094-exec-1][AssetController.java:45] - My xid as : 192.168.56.1:8799:32583710855401472
+2020-07-31 21:56:02.062 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32583710855401472
+2020-07-31 21:56:02.125 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32583710855401472
+2020-07-31 21:56:02.235 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32583710855401472
+2020-07-31 21:56:02.364 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32583710855401472
+2020-07-31 21:56:02.469 INFO [http-nio-8094-exec-1][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32583710855401472
+2020-07-31 21:56:02.581 INFO [rpcDispatch_RMROLE_1_3_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32583710855401472,branchId=32583713011273728,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 21:56:02.582 INFO [rpcDispatch_RMROLE_1_3_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32583710855401472 32583713011273728 jdbc:mysql://localhost:3306/fort
+2020-07-31 21:56:02.584 INFO [rpcDispatch_RMROLE_1_3_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:56:02.585 INFO [rpcDispatch_RMROLE_1_3_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:56:02.585 INFO [rpcDispatch_RMROLE_1_3_16][AbstractUndoExecutor.java:233] - Stop rollback because there is no data change between the before data snapshot and the after data snapshot.
+2020-07-31 21:56:02.613 INFO [rpcDispatch_RMROLE_1_3_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32583710855401472 branch 32583713011273728, undo_log deleted with GlobalFinished
+2020-07-31 21:56:02.614 INFO [rpcDispatch_RMROLE_1_3_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 21:56:02.756 INFO [http-nio-8094-exec-1][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32583710855401472] rollback status: Rollbacked
+2020-07-31 21:57:10.411 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:57:14.727 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:57:15.381 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:57:15.633 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:59:15.131 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$9afa584e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:16.092 INFO [main][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:59:16.335 INFO [main][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:59:16.335 INFO [main][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-classpath:/config/asset-dev.yml'}]
+2020-07-31 21:59:16.335 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+2020-07-31 21:59:21.095 INFO [main][GenericScope.java:295] - BeanFactory id=7451bc0d-5a69-3a49-9858-8d8a26846143
+2020-07-31 21:59:21.321 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration$$EnhancerBySpringCGLIB$$6ef0be85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.336 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.410 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.425 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.cloud.alibaba.seata-io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.425 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'seata-io.seata.spring.boot.autoconfigure.properties.SeataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.425 INFO [main][SeataAutoConfiguration.java:65] - Automatically configure Seata
+2020-07-31 21:59:21.552 INFO [main][ConfigurationFactory.java:65] - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2020-07-31 21:59:21.552 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'configProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.552 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'configFileProperties' of type [io.seata.spring.boot.autoconfigure.properties.config.ConfigFileProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.568 INFO [main][ConfigurationFactory.java:123] - load Configuration:FileConfiguration$$EnhancerByCGLIB$$862af1eb
+2020-07-31 21:59:21.662 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'serviceProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.ServiceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.664 INFO [main][GlobalTransactionScanner.java:164] - Initializing Global Transaction Clients ... 
+2020-07-31 21:59:21.683 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'threadFactoryProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.ThreadFactoryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.690 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transportProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.TransportProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.834 INFO [main][NettyClientBootstrap.java:147] - NettyClientBootstrap has started
+2020-07-31 21:59:21.834 INFO [main][GlobalTransactionScanner.java:172] - Transaction Manager Client is initialized. applicationId[asset] txServiceGroup[asset_group]
+2020-07-31 21:59:21.869 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rmProperties' of type [io.seata.spring.boot.autoconfigure.properties.client.RmProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:21.870 INFO [main][AsyncWorker.java:125] - Async Commit Buffer Limit: 1000
+2020-07-31 21:59:21.871 INFO [main][ResourceManagerXA.java:40] - ResourceManagerXA init ...
+2020-07-31 21:59:21.888 INFO [main][NettyClientBootstrap.java:147] - NettyClientBootstrap has started
+2020-07-31 21:59:21.889 INFO [main][GlobalTransactionScanner.java:177] - Resource Manager is initialized. applicationId[asset] txServiceGroup[asset_group]
+2020-07-31 21:59:21.889 INFO [main][GlobalTransactionScanner.java:181] - Global Transaction Clients are initialized. 
+2020-07-31 21:59:21.995 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:22.481 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dataSourceConfig' of type [com.fort.webapp.config.DataSourceConfig$$EnhancerBySpringCGLIB$$d6b74cd6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:22.561 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dataSource' of type [org.apache.commons.dbcp2.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:22.598 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:22.609 INFO [main][SeataAutoDataSourceProxyCreator.java:45] - Auto proxy of [dataSource]
+2020-07-31 21:59:22.667 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:22.676 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:22.683 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionAdviceConfig' of type [com.fort.webapp.config.TransactionAdviceConfig$$EnhancerBySpringCGLIB$$b820c465] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:22.692 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:22.693 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:22.694 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:22.713 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-31 21:59:23.232 INFO [main][TomcatWebServer.java:92] - Tomcat initialized with port(s): 8094 (http)
+2020-07-31 21:59:23.246 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-8094"]
+2020-07-31 21:59:23.247 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2020-07-31 21:59:23.248 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-07-31 21:59:23.462 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2020-07-31 21:59:23.462 INFO [main][ServletWebServerApplicationContext.java:284] - Root WebApplicationContext: initialization completed in 7091 ms
+2020-07-31 21:59:23.658 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-31 21:59:23.689 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@11742b29
+2020-07-31 21:59:24.341 INFO [main][EurekaConfigBasedInstanceInfoProvider.java:107] - Setting initial instance status as: STARTING
+2020-07-31 21:59:24.414 INFO [main][DiscoveryClient.java:371] - Initializing Eureka in region us-east-1
+2020-07-31 21:59:25.059 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-07-31 21:59:25.059 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-07-31 21:59:25.260 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-07-31 21:59:25.260 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-07-31 21:59:25.721 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:59:25.817 INFO [main][DiscoveryClient.java:988] - Disable delta property : false
+2020-07-31 21:59:25.818 INFO [main][DiscoveryClient.java:989] - Single vip registry refresh property : null
+2020-07-31 21:59:25.818 INFO [main][DiscoveryClient.java:990] - Force full registry fetch : false
+2020-07-31 21:59:25.819 INFO [main][DiscoveryClient.java:991] - Application is null : false
+2020-07-31 21:59:25.819 INFO [main][DiscoveryClient.java:992] - Registered Applications size is zero : true
+2020-07-31 21:59:25.819 INFO [main][DiscoveryClient.java:994] - Application version is -1: true
+2020-07-31 21:59:25.820 INFO [main][DiscoveryClient.java:1077] - Getting all instance registry info from the eureka server
+2020-07-31 21:59:26.065 INFO [main][DiscoveryClient.java:1086] - The response status is 200
+2020-07-31 21:59:26.065 INFO [main][DiscoveryClient.java:1349] - Not registering with Eureka server per configuration
+2020-07-31 21:59:26.065 INFO [main][DiscoveryClient.java:475] - Discovery Client initialized at timestamp 1596203966065 with initial instances count: 7
+2020-07-31 21:59:26.081 INFO [main][NettyClientChannelManager.java:99] - will connect to 192.168.56.1:8799
+2020-07-31 21:59:26.081 INFO [main][RmNettyRemotingClient.java:244] - RM will register :jdbc:mysql://localhost:3306/fort
+2020-07-31 21:59:26.081 INFO [main][NettyPoolableFactory.java:56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.56.1:8799,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/fort', applicationId='asset', transactionServiceGroup='asset_group'} >
+2020-07-31 21:59:26.385 INFO [main][RmNettyRemotingClient.java:151] - register RM success. client version:1.3.0, server version:1.3.0,channel:[id: 0x141324e0, L:/192.168.56.1:55301 - R:/192.168.56.1:8799]
+2020-07-31 21:59:26.407 INFO [main][NettyPoolableFactory.java:81] - register success, cost 102 ms, version:1.3.0,role:RMROLE,channel:[id: 0x141324e0, L:/192.168.56.1:55301 - R:/192.168.56.1:8799]
+2020-07-31 21:59:28.003 INFO [main][GlobalTransactionScanner.java:231] - Bean[com.fort.webapp.controller.asset.AssetController] with name [assetController] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+2020-07-31 21:59:28.167 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-31 21:59:28.493 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-31 21:59:29.075 INFO [main][UserDetailsServiceAutoConfiguration.java:86] - 
+
+Using generated security password: b45bd653-78b5-42e1-8d7b-f8099ce73394
+
+2020-07-31 21:59:29.448 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f4e8af1, org.springframework.security.web.context.SecurityContextPersistenceFilter@4da1d61b, org.springframework.security.web.header.HeaderWriterFilter@7e14c05, org.springframework.security.web.authentication.logout.LogoutFilter@11f4c488, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@26cee3d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79eaf64, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6db96289, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@89f4d09, org.springframework.security.web.session.SessionManagementFilter@69117714, org.springframework.security.web.access.ExceptionTranslationFilter@2296c3d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15e281ee]
+2020-07-31 21:59:29.930 INFO [main][EndpointLinksResolver.java:58] - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-31 21:59:30.026 INFO [main][InstanceInfoFactory.java:72] - Setting initial instance status as: STARTING
+2020-07-31 21:59:30.049 INFO [main][DiscoveryClient.java:371] - Initializing Eureka in region us-east-1
+2020-07-31 21:59:30.051 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-07-31 21:59:30.052 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-07-31 21:59:30.052 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-07-31 21:59:30.052 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-07-31 21:59:30.144 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+2020-07-31 21:59:30.160 INFO [main][DiscoveryClient.java:988] - Disable delta property : false
+2020-07-31 21:59:30.161 INFO [main][DiscoveryClient.java:989] - Single vip registry refresh property : null
+2020-07-31 21:59:30.161 INFO [main][DiscoveryClient.java:990] - Force full registry fetch : false
+2020-07-31 21:59:30.161 INFO [main][DiscoveryClient.java:991] - Application is null : false
+2020-07-31 21:59:30.161 INFO [main][DiscoveryClient.java:992] - Registered Applications size is zero : true
+2020-07-31 21:59:30.162 INFO [main][DiscoveryClient.java:994] - Application version is -1: true
+2020-07-31 21:59:30.162 INFO [main][DiscoveryClient.java:1077] - Getting all instance registry info from the eureka server
+2020-07-31 21:59:30.279 INFO [main][DiscoveryClient.java:1086] - The response status is 200
+2020-07-31 21:59:30.281 INFO [main][DiscoveryClient.java:1301] - Starting heartbeat executor: renew interval is: 30
+2020-07-31 21:59:30.285 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-31 21:59:30.288 INFO [main][DiscoveryClient.java:475] - Discovery Client initialized at timestamp 1596203970287 with initial instances count: 7
+2020-07-31 21:59:30.300 INFO [main][EurekaServiceRegistry.java:41] - Registering application ASSET with eureka with status UP
+2020-07-31 21:59:30.301 INFO [main][DiscoveryClient.java:1337] - Saw local status change event StatusChangeEvent [timestamp=1596203970301, current=UP, previous=STARTING]
+2020-07-31 21:59:30.305 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:249] - Fetching config from server at : http://lucky-PC:8090/
+2020-07-31 21:59:30.485 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-8094"]
+2020-07-31 21:59:30.508 INFO [main][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-31 21:59:30.508 INFO [main][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2020-07-31 21:59:30.523 INFO [main][FrameworkServlet.java:547] - Completed initialization in 15 ms
+2020-07-31 21:59:30.524 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 8094 (http) with context path ''
+2020-07-31 21:59:30.525 INFO [main][EurekaAutoServiceRegistration.java:145] - Updating port to 8094
+2020-07-31 21:59:30.657 INFO [main][StartupInfoLogger.java:61] - Started AssetApplication in 15.346 seconds (JVM running for 16.511)
+2020-07-31 21:59:30.669 INFO [DiscoveryClient-InstanceInfoReplicator-0][ConfigServicePropertySourceLocator.java:168] - Located environment: name=asset, profiles=[dev], label=null, version=null, state=null
+2020-07-31 21:59:30.735 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:854] - DiscoveryClient_ASSET/lucky-PC:asset:8094: registering service...
+2020-07-31 21:59:30.782 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:863] - DiscoveryClient_ASSET/lucky-PC:asset:8094 - registration status: 204
+2020-07-31 22:00:16.001 INFO [http-nio-8094-exec-2][TransactionManagerHolder.java:40] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@51a5c62c
+2020-07-31 22:00:16.005 INFO [rpcMergeMessageSend_TMROLE_1_1][NettyClientChannelManager.java:99] - will connect to 192.168.56.1:8799
+2020-07-31 22:00:16.006 INFO [rpcMergeMessageSend_TMROLE_1_1][NettyPoolableFactory.java:56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.56.1:8799,msg:< RegisterTMRequest{applicationId='asset', transactionServiceGroup='asset_group'} >
+2020-07-31 22:00:16.014 INFO [rpcMergeMessageSend_TMROLE_1_1][TmNettyRemotingClient.java:138] - register TM success. client version:1.3.0, server version:1.3.0,channel:[id: 0xb4c13885, L:/192.168.56.1:55464 - R:/192.168.56.1:8799]
+2020-07-31 22:00:16.014 INFO [rpcMergeMessageSend_TMROLE_1_1][NettyPoolableFactory.java:81] - register success, cost 6 ms, version:1.3.0,role:TMROLE,channel:[id: 0xb4c13885, L:/192.168.56.1:55464 - R:/192.168.56.1:8799]
+2020-07-31 22:00:16.025 INFO [http-nio-8094-exec-2][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32584776095371264]
+2020-07-31 22:00:16.026 INFO [http-nio-8094-exec-2][AssetController.java:45] - My xid as : 192.168.56.1:8799:32584776095371264
+2020-07-31 22:00:16.336 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32584776095371264
+2020-07-31 22:00:16.793 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32584776095371264
+2020-07-31 22:00:17.000 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32584776095371264
+2020-07-31 22:00:17.251 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32584776095371264
+2020-07-31 22:00:17.509 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32584776095371264
+2020-07-31 22:00:17.813 INFO [http-nio-8094-exec-2][DefaultGlobalTransaction.java:143] - [192.168.56.1:8799:32584776095371264] commit status: Committed
+2020-07-31 22:00:18.367 INFO [rpcDispatch_RMROLE_1_1_16][RmBranchCommitProcessor.java:56] - rm client handle branch commit process:xid=192.168.56.1:8799:32584776095371264,branchId=32584783133413376,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 22:00:18.371 INFO [rpcDispatch_RMROLE_1_1_16][AbstractRMHandler.java:96] - Branch committing: 192.168.56.1:8799:32584776095371264 32584783133413376 jdbc:mysql://localhost:3306/fort null
+2020-07-31 22:00:18.373 INFO [rpcDispatch_RMROLE_1_1_16][AbstractRMHandler.java:104] - Branch commit result: PhaseTwo_Committed
+2020-07-31 22:00:28.633 INFO [http-nio-8094-exec-6][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32584829002321920]
+2020-07-31 22:00:28.634 INFO [http-nio-8094-exec-6][AssetController.java:45] - My xid as : 192.168.56.1:8799:32584829002321920
+2020-07-31 22:00:28.654 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32584829002321920
+2020-07-31 22:00:28.769 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32584829002321920
+2020-07-31 22:00:29.039 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32584829002321920
+2020-07-31 22:00:29.225 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32584829002321920
+2020-07-31 22:00:29.361 INFO [http-nio-8094-exec-6][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32584829002321920
+2020-07-31 22:00:29.604 INFO [http-nio-8094-exec-6][DefaultGlobalTransaction.java:143] - [192.168.56.1:8799:32584829002321920] commit status: Committed
+2020-07-31 22:00:30.441 INFO [rpcDispatch_RMROLE_1_2_16][RmBranchCommitProcessor.java:56] - rm client handle branch commit process:xid=192.168.56.1:8799:32584829002321920,branchId=32584832764612608,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 22:00:30.441 INFO [rpcDispatch_RMROLE_1_2_16][AbstractRMHandler.java:96] - Branch committing: 192.168.56.1:8799:32584829002321920 32584832764612608 jdbc:mysql://localhost:3306/fort null
+2020-07-31 22:00:30.441 INFO [rpcDispatch_RMROLE_1_2_16][AbstractRMHandler.java:104] - Branch commit result: PhaseTwo_Committed
+2020-07-31 22:01:22.233 INFO [http-nio-8094-exec-2][DefaultGlobalTransaction.java:108] - Begin new global transaction [192.168.56.1:8799:32585053817016320]
+2020-07-31 22:01:22.233 INFO [http-nio-8094-exec-2][AssetController.java:45] - My xid as : 192.168.56.1:8799:32585053817016320
+2020-07-31 22:01:22.248 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32585053817016320
+2020-07-31 22:01:22.370 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32585053817016320
+2020-07-31 22:01:22.614 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32585053817016320
+2020-07-31 22:01:23.039 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32585053817016320
+2020-07-31 22:01:23.246 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32585053817016320
+2020-07-31 22:01:23.484 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32585053817016320
+2020-07-31 22:01:23.648 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32585053817016320
+2020-07-31 22:01:23.831 INFO [http-nio-8094-exec-2][FeignHeadersInterceptor.java:50] - My xid2 as : 192.168.56.1:8799:32585053817016320
+2020-07-31 22:01:24.191 INFO [rpcDispatch_RMROLE_1_3_16][RmBranchRollbackProcessor.java:56] - rm handle branch rollback process:xid=192.168.56.1:8799:32585053817016320,branchId=32585061488398336,branchType=AT,resourceId=jdbc:mysql://localhost:3306/fort,applicationData=null
+2020-07-31 22:01:24.193 INFO [rpcDispatch_RMROLE_1_3_16][AbstractRMHandler.java:123] - Branch Rollbacking: 192.168.56.1:8799:32585053817016320 32585061488398336 jdbc:mysql://localhost:3306/fort
+2020-07-31 22:01:24.318 INFO [rpcDispatch_RMROLE_1_3_16][AbstractUndoLogManager.java:312] - xid 192.168.56.1:8799:32585053817016320 branch 32585061488398336, undo_log deleted with GlobalFinished
+2020-07-31 22:01:24.319 INFO [rpcDispatch_RMROLE_1_3_16][AbstractRMHandler.java:131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+2020-07-31 22:01:24.666 INFO [http-nio-8094-exec-2][DefaultGlobalTransaction.java:179] - [192.168.56.1:8799:32585053817016320] rollback status: Rollbacked

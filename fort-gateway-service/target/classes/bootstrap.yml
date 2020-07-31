@@ -28,6 +28,9 @@ eureka:
       defaultZone: http://discovery:Cl0vdsec.eureka@localhost:8761/eureka/
 zuul:
   sensitiveHeaders:
+ribbon:
+  ConnectTimeout: 180000 # 连接超时时间(ms)
+  ReadTimeout: 180000 # 通信超时时间(ms)
 feign:
   client:
     config:
@@ -42,4 +45,6 @@ hystrix:
     default:
       execution:
         isolation:
+          thread:
+            timeoutInMilliseconds: 180000 # 熔断超时时长：180000ms
           strategy: SEMAPHORE

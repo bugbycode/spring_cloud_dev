@@ -1,6 +1,0 @@
-server:
-  port: 8093
-eureka:
-  client:
-    healthcheck:
-      enabled: true #启用健康检查 

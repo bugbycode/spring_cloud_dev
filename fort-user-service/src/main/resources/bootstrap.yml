@@ -26,12 +26,18 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery:Cl0vdsec.eureka@localhost:8761/eureka/
+ribbon:
+  ConnectTimeout: 180000 # 连接超时时间(ms)
+  ReadTimeout: 180000 # 通信超时时间(ms)
 feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: FULL
   hystrix:
     enabled: true #启用熔断机制
-ribbon:
-  ConnectTimeout: 10000 # 连接超时时间(ms)
-  ReadTimeout: 10000 # 通信超时时间(ms)
 hystrix:
   command:
     default:

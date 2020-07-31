@@ -116,10 +116,7 @@ public class AssetServiceImpl implements AssetService {
 					protocolMapper.insert(pro);
 				} else {
 					pro.setId(dbPro.getId());
-					int r = protocolMapper.updateById(pro);
-					if (r < 0) {
-						throw new RuntimeException("修改授权规则发生异常");
-					}
+					protocolMapper.updateById(pro);
 				}
 			}
 			
@@ -157,10 +154,7 @@ public class AssetServiceImpl implements AssetService {
 				} else {
 					dbAcc.setPassword(acc.getPassword());
 					dbAcc.setType(acc.getType());
-					int r = accountMapper.updateById(dbAcc);
-					if (r < 0) {
-						throw new RuntimeException("修改授权规则发生异常");
-					}
+					accountMapper.updateById(dbAcc);
 				}
 			}
 			//删除账号
