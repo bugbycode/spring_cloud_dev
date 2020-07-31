@@ -3,6 +3,8 @@ Spring cloud Security Oauth2 本地事务、分布式事务练习
 
 本项目为前后端分离项目的服务端。前端项目仓库地址为：https://github.com/bugbycode/cloud-ui.git
 
+参考博客地址：https://my.oschina.net/zhangzhigong/blog/4462116
+
 ## 项目说明：
 
 1、fort-commons、fort-*-commons为公共依赖包
