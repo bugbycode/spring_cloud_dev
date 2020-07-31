@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fort.module.asset.Asset;
 import com.fort.service.asset.AssetService;
+import com.util.exception.FortError;
+import com.util.exception.FortException;
 import com.util.page.SearchResult;
 
 import io.seata.core.context.RootContext;
@@ -38,6 +40,12 @@ public class AssetController {
 		return assetService.query(keyword, offset, limit);
 	}
 	
+	/**
+	 * 修改设备信息
+	 * 
+	 * @param asset
+	 * @return
+	 */
 	@GlobalTransactional
 	@PostMapping("/updateById")
 	public int updateById(@RequestBody Asset asset) {
@@ -47,7 +55,7 @@ public class AssetController {
 		int rows = assetService.updateById(asset);
 
 		if("mytest".equals(asset.getName())) {
-			throw new RuntimeException("自定义异常");
+			throw new FortException(FortError.SERVER_ERROR);
 		}
 		return rows;
 	}

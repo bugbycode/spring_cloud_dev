@@ -1,97 +1,243 @@
-2020-07-31 18:38:07.196 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-07-31 18:38:07.298 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2020-07-31 18:38:12.849 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 18:38:18.422 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 18:38:23.734 WARN [main][SpringCloudSecurityAutoConfiguration.java:38] - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
-2020-07-31 18:38:26.120 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
-2020-07-31 18:38:27.273 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 18:38:27.276 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 18:38:27.298 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 18:38:28.206 WARN [NettyClientSelector_RMROLE_1_1][EnhancedServiceLoader.java:489] - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
-2020-07-31 18:41:26.177 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-07-31 18:41:26.248 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2020-07-31 18:41:33.631 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 18:41:38.561 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 18:41:43.138 WARN [main][SpringCloudSecurityAutoConfiguration.java:38] - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
-2020-07-31 18:41:46.413 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
-2020-07-31 18:41:48.163 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 18:41:48.165 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 18:41:48.193 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 18:41:49.880 WARN [NettyClientSelector_RMROLE_1_1][EnhancedServiceLoader.java:489] - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
-2020-07-31 19:00:14.765 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-07-31 19:00:14.821 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2020-07-31 19:00:19.019 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 19:00:22.653 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 19:00:25.329 WARN [main][SpringCloudSecurityAutoConfiguration.java:38] - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
-2020-07-31 19:00:27.324 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
-2020-07-31 19:00:28.872 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 19:00:28.879 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 19:00:28.900 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 19:00:29.846 WARN [NettyClientSelector_RMROLE_1_1][EnhancedServiceLoader.java:489] - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
-2020-07-31 19:02:23.189 WARN [http-nio-8094-exec-4][EnhancedServiceLoader.java:489] - Load [io.seata.rm.datasource.undo.parser.ProtostuffUndoLogParser] class fail. io/protostuff/runtime/IdStrategy
-2020-07-31 19:04:34.387 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-07-31 19:04:34.419 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2020-07-31 19:04:37.111 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 19:04:39.327 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 19:04:41.007 WARN [main][SpringCloudSecurityAutoConfiguration.java:38] - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
-2020-07-31 19:04:42.163 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
-2020-07-31 19:04:42.839 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 19:04:42.841 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 19:04:42.852 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 19:04:43.358 WARN [NettyClientSelector_RMROLE_1_1][EnhancedServiceLoader.java:489] - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
-2020-07-31 19:05:13.729 WARN [http-nio-8094-exec-5][EnhancedServiceLoader.java:489] - Load [io.seata.rm.datasource.undo.parser.ProtostuffUndoLogParser] class fail. io/protostuff/runtime/IdStrategy
-2020-07-31 21:08:38.666 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-07-31 21:08:38.720 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2020-07-31 21:08:41.607 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 21:08:43.774 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 21:08:45.357 WARN [main][SpringCloudSecurityAutoConfiguration.java:38] - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
-2020-07-31 21:08:46.647 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
-2020-07-31 21:08:47.525 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:08:47.526 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:08:47.542 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:08:48.226 WARN [NettyClientSelector_RMROLE_1_1][EnhancedServiceLoader.java:489] - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
-2020-07-31 21:17:23.562 WARN [http-nio-8094-exec-1][EnhancedServiceLoader.java:489] - Load [io.seata.rm.datasource.undo.parser.ProtostuffUndoLogParser] class fail. io/protostuff/runtime/IdStrategy
-2020-07-31 21:30:33.468 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-07-31 21:30:33.514 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2020-07-31 21:30:36.584 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 21:30:39.017 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 21:30:40.833 WARN [main][SpringCloudSecurityAutoConfiguration.java:38] - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
-2020-07-31 21:30:42.100 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
-2020-07-31 21:30:43.173 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:30:43.173 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:30:43.189 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:30:43.908 WARN [NettyClientSelector_RMROLE_1_1][EnhancedServiceLoader.java:489] - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
-2020-07-31 21:33:52.224 WARN [http-nio-8094-exec-6][EnhancedServiceLoader.java:489] - Load [io.seata.rm.datasource.undo.parser.ProtostuffUndoLogParser] class fail. io/protostuff/runtime/IdStrategy
-2020-07-31 21:36:51.137 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-07-31 21:36:51.169 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2020-07-31 21:36:54.389 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 21:36:56.682 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 21:36:58.578 WARN [main][SpringCloudSecurityAutoConfiguration.java:38] - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
-2020-07-31 21:36:59.972 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
-2020-07-31 21:37:01.084 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:37:01.086 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:37:01.103 WARN [DiscoveryClient-InstanceInfoReplicator-0][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:37:02.385 WARN [NettyClientSelector_RMROLE_1_1][EnhancedServiceLoader.java:489] - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
-2020-07-31 21:37:21.666 WARN [http-nio-8094-exec-3][EnhancedServiceLoader.java:489] - Load [io.seata.rm.datasource.undo.parser.ProtostuffUndoLogParser] class fail. io/protostuff/runtime/IdStrategy
-2020-07-31 21:51:40.957 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-07-31 21:51:40.992 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2020-07-31 21:51:43.950 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 21:51:44.680 WARN [main][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:51:44.680 WARN [main][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:51:44.747 WARN [main][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:51:46.868 WARN [NettyClientSelector_RMROLE_1_1][EnhancedServiceLoader.java:489] - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
-2020-07-31 21:51:48.577 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 21:51:50.316 WARN [main][SpringCloudSecurityAutoConfiguration.java:38] - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
-2020-07-31 21:51:50.720 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
-2020-07-31 21:53:07.231 WARN [http-nio-8094-exec-4][EnhancedServiceLoader.java:489] - Load [io.seata.rm.datasource.undo.parser.ProtostuffUndoLogParser] class fail. io/protostuff/runtime/IdStrategy
-2020-07-31 21:59:20.861 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-07-31 21:59:20.917 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2020-07-31 21:59:23.658 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 21:59:24.316 WARN [main][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:59:24.323 WARN [main][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:59:24.360 WARN [main][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
-2020-07-31 21:59:26.354 WARN [NettyClientSelector_RMROLE_1_1][EnhancedServiceLoader.java:489] - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
-2020-07-31 21:59:28.166 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-2020-07-31 21:59:29.922 WARN [main][SpringCloudSecurityAutoConfiguration.java:38] - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
-2020-07-31 21:59:30.302 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
-2020-07-31 22:00:17.728 WARN [http-nio-8094-exec-2][EnhancedServiceLoader.java:489] - Load [io.seata.rm.datasource.undo.parser.ProtostuffUndoLogParser] class fail. io/protostuff/runtime/IdStrategy
+2020-08-01 00:30:57.775 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-01 00:30:57.814 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-01 00:31:00.416 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+2020-08-01 00:31:01.148 WARN [main][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
+2020-08-01 00:31:01.154 WARN [main][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
+2020-08-01 00:31:01.183 WARN [main][Archaius1Utils.java:35] - Cannot find the properties specified : eureka-client. This may be okay if there are other environment specific properties or the configuration is installed with a different mechanism.
+2020-08-01 00:31:02.760 ERROR [main][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:31:04.402 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+2020-08-01 00:31:06.122 WARN [main][SpringCloudSecurityAutoConfiguration.java:38] - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-01 00:31:06.474 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
+2020-08-01 00:31:58.651 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:31:58.718 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:32:08.652 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:32:08.718 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:32:18.652 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:32:18.719 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:32:32.963 WARN [main][EndpointId.java:155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-01 00:32:32.998 WARN [main][EndpointId.java:155] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-01 00:32:35.972 WARN [main][URLCon2020-08-01 00:32:38.652 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:32:38.719 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:32:48.653 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:32:48.720 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:32:58.653 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:32:58.720 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:08.654 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:08.721 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:18.654 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:18.721 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:28.655 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:28.721 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:38.655 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:38.722 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:48.655 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:48.722 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:58.654 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:33:58.722 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:34:08.656 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:34:08.723 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:34:18.656 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:34:18.723 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:34:28.657 ERROR [timeoutChecker_1_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:34:28.739 ERROR [timeoutChecker_2_1][NettyClientChannelManager.java:170] - no available service 'seata-server' found, please make sure registry config correct
+2020-08-01 00:34:38.941 WARN [NettyClientSelector_TMROLE_1_1][EnhancedServiceLoader.java:489] - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
+2020-08-01 00:42:26.315 WARN [http-nio-8094-exec-1][EnhancedServiceLoader.java:489] - Load [io.seata.rm.datasource.undo.parser.ProtostuffUndoLogParser] class fail. io/protostuff/runtime/IdStrategy
+java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-08-01 00:32:42.209 WARN [main][DirectJDKLog.java:173] - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2020-08-01 00:32:42.217 WARN [main][DiscoveryClient.java:1335] - Saw local status change event StatusChangeEvent [timestamp=1596213162217, current=DOWN, previous=UP]
+2020-08-01 00:32:42.218 WARN [main][InstanceInfoReplicator.java:110] - Ignoring onDemand update due to rate limiter
+2020-08-01 00:32:42.343 WARN [DiscoveryClient-InstanceInfoReplicator-0][AbstractHealthIndicator.java:87] - DataSource health check failed
+java.lang.reflect.UndeclaredThrowableException: null
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:757) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.commons.dbcp2.BasicDataSource$$EnhancerBySpringCGLIB$$5859dc2e.getConnection(<generated>) ~[commons-dbcp2-2.7.0.jar:2.7.0]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) ~[spring-jdbc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.getProduct(DataSourceHealthIndicator.java:122) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doDataSourceHealthCheck(DataSourceHealthIndicator.java:107) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doHealthCheck(DataSourceHealthIndicator.java:102) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) [?:1.8.0_221]
+	at java.util.HashMap$ValueSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.ReferencePipeline.collect(Unknown Source) [?:1.8.0_221]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:195) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:176) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:170) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1426) [eureka-client-1.9.21.jar:1.9.21]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117) [eureka-client-1.9.21.jar:1.9.21]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.21.jar:1.9.21]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_221]
+	at io.seata.spring.annotation.datasource.SeataAutoDataSourceProxyAdvice.invoke(SeataAutoDataSourceProxyAdvice.java:39) ~[seata-all-1.3.0.jar:1.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 30 more
+Caused by: java.sql.SQLException: Data source is closed
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:521) ~[commons-dbcp2-2.7.0.jar:2.7.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:753) ~[commons-dbcp2-2.7.0.jar:2.7.0]
+	at io.seata.rm.datasource.DataSourceProxy.getConnection(DataSourceProxy.java:132) ~[seata-all-1.3.0.jar:1.3.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_221]
+	at io.seata.spring.annotation.datasource.SeataAutoDataSourceProxyAdvice.invoke(SeataAutoDataSourceProxyAdvice.java:39) ~[seata-all-1.3.0.jar:1.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 30 more
+2020-08-01 00:32:42.354 WARN [DiscoveryClient-InstanceInfoReplicator-0][AbstractHealthIndicator.java:87] - Health check failed
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'refreshScope': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfAvailable(DefaultListableBeanFactory.java:1920) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.health.RefreshScopeHealthIndicator.doHealthCheck(RefreshScopeHealthIndicator.java:49) ~[spring-cloud-context-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) [?:1.8.0_221]
+	at java.util.HashMap$ValueSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.ReferencePipeline.collect(Unknown Source) [?:1.8.0_221]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:195) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:176) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:170) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1426) [eureka-client-1.9.21.jar:1.9.21]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117) [eureka-client-1.9.21.jar:1.9.21]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.21.jar:1.9.21]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2020-08-01 00:32:42.403 WARN [DiscoveryClient-InstanceInfoReplicator-0][AbstractHealthIndicator.java:87] - DataSource health check failed
+java.lang.reflect.UndeclaredThrowableException: null
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:757) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.commons.dbcp2.BasicDataSource$$EnhancerBySpringCGLIB$$5859dc2e.getConnection(<generated>) ~[commons-dbcp2-2.7.0.jar:2.7.0]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) ~[spring-jdbc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.getProduct(DataSourceHealthIndicator.java:122) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doDataSourceHealthCheck(DataSourceHealthIndicator.java:107) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doHealthCheck(DataSourceHealthIndicator.java:102) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) [?:1.8.0_221]
+	at java.util.HashMap$ValueSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.ReferencePipeline.collect(Unknown Source) [?:1.8.0_221]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:195) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:176) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:170) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1426) [eureka-client-1.9.21.jar:1.9.21]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117) [eureka-client-1.9.21.jar:1.9.21]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.21.jar:1.9.21]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_221]
+	at io.seata.spring.annotation.datasource.SeataAutoDataSourceProxyAdvice.invoke(SeataAutoDataSourceProxyAdvice.java:39) ~[seata-all-1.3.0.jar:1.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 30 more
+Caused by: java.sql.SQLException: Data source is closed
+	at org.apache.commons.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:521) ~[commons-dbcp2-2.7.0.jar:2.7.0]
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:753) ~[commons-dbcp2-2.7.0.jar:2.7.0]
+	at io.seata.rm.datasource.DataSourceProxy.getConnection(DataSourceProxy.java:132) ~[seata-all-1.3.0.jar:1.3.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_221]
+	at io.seata.spring.annotation.datasource.SeataAutoDataSourceProxyAdvice.invoke(SeataAutoDataSourceProxyAdvice.java:39) ~[seata-all-1.3.0.jar:1.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 30 more
+2020-08-01 00:32:42.405 WARN [DiscoveryClient-InstanceInfoReplicator-0][AbstractHealthIndicator.java:87] - Health check failed
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'refreshScope': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfAvailable(DefaultListableBeanFactory.java:1920) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.health.RefreshScopeHealthIndicator.doHealthCheck(RefreshScopeHealthIndicator.java:49) ~[spring-cloud-context-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) [?:1.8.0_221]
+	at java.util.HashMap$ValueSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) [?:1.8.0_221]
+	at java.util.stream.ReferencePipeline.collect(Unknown Source) [?:1.8.0_221]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:195) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getHealthStatus(EurekaHealthCheckHandler.java:176) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.netflix.eureka.EurekaHealthCheckHandler.getStatus(EurekaHealthCheckHandler.java:170) [spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at com.netflix.discovery.DiscoveryClient.refreshInstanceInfo(DiscoveryClient.java:1426) [eureka-client-1.9.21.jar:1.9.21]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:117) [eureka-client-1.9.21.jar:1.9.21]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.21.jar:1.9.21]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_221]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_221]
+2020-08-01 00:32:42.437 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8094 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8094 or configure this application to listen on another port.
+
