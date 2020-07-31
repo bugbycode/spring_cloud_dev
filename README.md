@@ -9,6 +9,8 @@ Spring cloud Security Oauth2 本地事务、分布式事务练习
 
 2、fort-*-service 为服务提供者
 
+3、创建数据库表结构脚本文件位置为：src/main/resources/data.sql
+
 ## 微服务说明：
 
 1、fort-discovery-service 为Eureka注册中心 其余的fort-*-service为Eureka客户端微服务
